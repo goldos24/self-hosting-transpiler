@@ -1,0 +1,376 @@
+var code = fload "main.txt";;
+print "//Tokenizing...";
+var result = list;;
+var in_string = 0;
+var current_token = list;;
+while eq  vareq code; list;;  0;
+	let_head_tail c; new_code;  code;;
+	if vareq in_string; 1; then
+		if vareq c; 34; then
+			in_string = 0;
+			result = concat result; list current_token;;;;
+			result = concat result; list list 34;;;;
+			current_token = list;;
+		; else
+			current_token = concat current_token; list c;;;;
+		;;
+	; else
+		var whitespace = 0;
+		if vareq c; 32; then
+			whitespace = 1;
+		;;
+		if vareq c; 10; then
+			whitespace = 1;
+		;;
+		if vareq c; 9; then
+			whitespace = 1;
+		;;
+		if vareq c; 34; then
+			if vareq current_token; list;; then; else
+				set result; concat result; list current_token;;;;
+			;;
+			set result; concat result; list list 34;;;;
+			set in_string; 1;
+			set current_token; list;;
+		; else if vareq c; 59; then
+			if vareq current_token; list;; then; else
+				set result; concat result; list current_token;;;;
+			;;
+			set result; concat result; list ";";;;
+			set current_token; list;;
+		; else if vareq c; 61; then
+			if vareq current_token; list;; then; else
+				set result; concat result; list current_token;;;;
+			;;
+			set result; concat result; list "=";;;
+			set current_token; list;;
+		; else if eq whitespace; 1; then
+			if vareq current_token; list;; then; else
+				set result; concat result; list current_token;;;;
+			;;
+			set current_token; list;;
+		; else 
+			set current_token; concat current_token; list c;;;;
+			"print //normal char";
+		;;;;;;;
+	;;
+	set code; new_code;;
+;
+var parse_stack = list list;;;
+while eq vareq result; list;; 0;
+	var unparsed = 1;
+	let_head_tail token; next_tokens; result;;
+	let_head_tail first_token_char; token_remainder; token;;
+	var digits = list 48 49 50 51 52 53 54 55 56 57;;
+	while eq vareq digits; list;; 0;
+		let_head_tail current_digit; following_digits; digits;;
+		if vareq first_token_char; current_digit;; then
+			let_head_tail tos; lower_parse_stack; parse_stack;;
+			set token; concat list first_token_char;; token_remainder;;;
+			set tos; concat tos; list 0 token;;;;
+			set parse_stack; concat list tos;; lower_parse_stack;;;
+			set unparsed; 0;
+		;;
+		if vareq unparsed; 1; then
+			set digits; following_digits;;
+		; else 
+			print "// an int";
+			set digits; list;;
+		;;
+	;
+	if unparsed; then
+		print "//not an int";
+		if vareq first_token_char; 34; then
+			let_head_tail string_contents; tokens_after_content; next_tokens;;
+			let_head_tail _; tokens_after_string; tokens_after_content;;
+			let_head_tail tos; lower_parse_stack; parse_stack;;
+			set tos; concat tos; list 1 string_contents;;;;
+			set parse_stack; concat list tos;; lower_parse_stack;;;
+			set next_tokens; tokens_after_string;;
+		; else
+			print "//not a string";
+			if vareq first_token_char; 59; then
+				print "// an end of function call";
+				let_head_tail tba; new_parse_stack; parse_stack;;
+				let_head_tail tos; lower_parse_stack; new_parse_stack;;
+				set tos; concat tos; list 2 tba;;;;
+				set parse_stack; concat list tos;; lower_parse_stack;;;
+			; else if vareq token; "="; then
+				let_head_tail tos; lower_parse_stack; parse_stack;;
+				set tos; list "set" 2 tos;;;
+				set parse_stack; concat list tos;; lower_parse_stack;;;
+			; else
+				print "// a function call";
+				set token; concat list first_token_char;; token_remainder;;;
+				if vareq token; "var"; then
+					print "// var statement detected";
+					let_head_tail name_token; tokens_after_name; next_tokens;;
+					let_head_tail equals_token; tokens_after_equals; tokens_after_name;;
+					print "/*";
+					print name_token;;
+					print equals_token;;
+					print "*/";
+					if eq equals_token; "="; then
+						var var_node = list "let";;
+						set next_tokens; concat list name_token; ";"; tokens_after_equals;;;
+						set parse_stack; concat list var_node;; parse_stack;;;
+					; else
+						print "#error var statement without equals sign";
+					;;
+				; else
+					set parse_stack; concat list list token;;; parse_stack;;;
+				;;
+			;;;;
+		;;
+	;;
+	set result; next_tokens;;	
+;
+print "//starting emitter...";
+var fstack = list;;
+print "#include <stdlib.h>"
+;print "#include <stdio.h>"
+;print "#include <stdint.h>"
+;print "#include <string.h>"
+;print "#include <stddef.h>"
+;print "struct __pcd_obj;"
+;print "union __pcd_obj_p {"
+;print "	int64_t v;"
+;print "	struct __pcd_obj *p;"
+;print "};"
+;print "struct __pcd_obj {"
+;print "	int32_t type;"
+;print "	int32_t len;"
+;print "	union __pcd_obj_p v;"
+;print "};"
+;print "int __eq(struct __pcd_obj x, struct __pcd_obj y) {"
+;print "	if (x.type != y.type)"
+;print "		return 0;"
+;print "	if (x.type == 0) {"
+;print "		return x.v.v == y.v.v;"
+;print "	}"
+;print "	if (x.len != y.len) "
+;print "		return 0;"
+;print "	if (x.v.p == y.v.p)"
+;print "		return 1;"
+;print "	for(int i = 0; i < x.len; ++i)"
+;print "		if(!__eq(x.v.p[i], y.v.p[i]))"
+;print "			return 0;"
+;print "	return 1;"
+;print "}"
+;print "struct __pcd_obj eq(struct __pcd_obj x, struct __pcd_obj y) {"
+;print "	struct __pcd_obj result;"
+;print "	result.type = 0;"
+;print "	result.len = 0;"
+;print "	result.v.v = __eq(x, y);"
+;print "	return result;"
+;print "}"
+;print "void print(struct __pcd_obj x) {"
+;print "	char* output = calloc(1, x.len + 1);"
+;print "	for(int32_t i = 0; i < x.len; ++i) {"
+;print "		int64_t c = x.v.p[i].v.v;"
+;print "		output[i] = c;"
+;print "	}"
+;print "	puts(output);"
+;print "	free(output);"
+;print "}"
+;print "struct __pcd_obj __mkstr(char *x) {"
+;print "	size_t n = strlen(x);"
+;print "	struct __pcd_obj *p = calloc(n, sizeof(struct __pcd_obj));"
+;print "	for(int32_t i = 0; i < n; ++i) "
+;print "		p[i].v.v = (uint8_t) x[i];"
+;print "	struct __pcd_obj result;"
+;print "	result.type = 1;"
+;print "	result.len = n;	"
+;print "	result.v.p = p;"
+;print "	return result;"
+;print "}"
+;print ""
+;print "struct __pcd_obj __mkint(int x) {"
+;print "	struct __pcd_obj result;"
+;print "	result.type = 0;"
+;print "	result.len = 0;	"
+;print "	result.v.v = x;"
+;print "	return result;"
+;print "}"
+;print ""
+;print "struct __pcd_obj __mk_elist() {"
+;print "	struct __pcd_obj result;"
+;print "	result.type = 1;"
+;print "	result.len = 0;"
+;print "	result.v.p = 0;"
+;print "	return result;"
+;print "}"
+;print ""
+;print "struct __pcd_obj __slist(struct __pcd_obj x) {"
+;print "	struct __pcd_obj result;"
+;print "	result.type = 1;"
+;print "	result.len = 1;"
+;print "	result.v.p = calloc(1, sizeof(struct __pcd_obj));"
+;print "	result.v.p[0] = x;"
+;print "	return result;"
+;print "}"
+;print "struct __pcd_obj fload(struct __pcd_obj x) {"
+;print "	char *fname = calloc(1, x.len);"
+;print "	for (int i = 0; i < x.len; ++i)"
+;print "		fname[i] = (char) (x.v.p[i].v.v);"
+;print "	char rb[3] = {'r', 'b', 0};"
+;print "	FILE *f = fopen(fname, rb);"
+;print "	fseek(f, 0, SEEK_END);"
+;print "	int fsize = ftell(f);"
+;print "	fseek(f, 0, SEEK_SET);"
+;print "	char *buffer = calloc(1, fsize + 1);"
+;print "	fread(buffer, 1, fsize, f);"
+;print "	fclose(f);"
+;print "	return __mkstr(buffer);"
+;print "}"
+;print "#define let_head_tail(x, y, l) struct __pcd_obj x = l.v.p[0]; struct __pcd_obj y = l; y.len--; y.v.p++;"
+;print "#define set(x, y) x = y"
+;print "struct __pcd_obj concat(struct __pcd_obj x, struct __pcd_obj y) {"
+;print "	struct __pcd_obj result;"
+;print "	result.type = 1;"
+;print "	result.len = x.len + y.len;"
+;print "	result.v.p = calloc(result.len, sizeof(struct __pcd_obj));"
+;print "	int ri = 0;"
+;print "	for(int i = 0; i < x.len; ++i) {"
+;print "		result.v.p[ri] = x.v.p[i];"
+;print "		++ri;"
+;print "	}"
+;print "	for(int i = 0; i < y.len; ++i) {"
+;print "		result.v.p[ri] = y.v.p[i];"
+;print "		++ri;"
+;print "	}"
+;print "	//free(x.v.p);"
+;print "	x.v.p = 0;"
+;print "	//free(y.v.p);"
+;print "	y.v.p = 0;"
+;print "	return result;"
+;print "}"
+;print ""
+;print "#define vareq(x, y) eq(x, y)"
+;print "#define __pass(x) x"
+;print "#define let(x, y) struct __pcd_obj x = y"
+;print "int main() {";
+while eq vareq parse_stack; list;; 0;
+	let_head_tail tos; lower_parse_stack; parse_stack;;
+	var fcall = 0;
+	if eq vareq tos; list;; 0; then
+		let_head_tail type; further; tos;;
+		let_head_tail content; next_tos; further;;
+		set tos; next_tos;;
+		if vareq type; 0; then
+			print concat "__mkint(" content; ")";;
+		; else if vareq type; 1; then
+			print concat "__mkstr(" list 34; content; list 34; ")";;
+		; else if vareq type; 2; then
+			let_head_tail fname; ftos; content;;
+			var fcode = 1;
+			if vareq fname; "if"; then
+				set fcode; 2;
+			; else if vareq fname; "then"; then
+				set fcode; 3;
+			; else if vareq fname; "else"; then
+				set fcode; 3;
+			; else if vareq fname; "while"; then
+				set fcode; 6;
+			;;;;;;;;
+			if vareq fname; "list"; then
+				if vareq ftos; list;; then
+					set fname; "__mk_elist()";
+				; else
+					set fname; "concat";
+					let_head_tail first_type; follow1; ftos;;
+					let_head_tail first_content; follow2; follow1;;
+					var first_param = list "__slist" first_type; first_content;;;
+					var second_param = concat list "list"; follow2;;;
+					set ftos; list 2 first_param; 2 second_param;;;
+				;;
+			;;
+			if vareq fname; "concat"; then
+				if vareq ftos; list;; then
+					print "#error 2 arguments required for concat";
+				;;
+				let_head_tail first_type; follow1; ftos;;
+				let_head_tail first_content; follow2; follow1;;
+				if vareq follow2; list;; then
+					set fname; "__pass";
+					set ftos; list first_type; first_content;;;
+				; else
+					var next_fcall = concat list "concat"; follow2;;;
+					set ftos; list first_type; first_content; 2 next_fcall;;;
+				;;
+			;;
+			if eq vareq fname; "then"; 0; then
+				print fname;;
+				if vareq ftos; list;; then
+					set fcode; 5;
+				;;
+			;;
+			if vareq fcode; 3; then
+				print "{";
+			; else if vareq fcode; 5; then; else
+				print "(";
+			;;;;
+			set fstack; concat list fcode;; fstack;;;
+			set parse_stack; concat list ftos;; list tos;; lower_parse_stack;;;
+			set fcall; 1;
+		; else
+			print "#error AST corrupted";	
+		;;;;;;
+	;;
+	if vareq fcall; 0; then
+		if vareq tos; list;; then
+			print "//empty ToS";
+			if vareq fstack; list;; then
+				print "// Should stop emitting now";
+			; else
+				let_head_tail fcode; new_fstack; fstack;;
+				set fstack; new_fstack;;
+				if vareq fcode; 3; then
+					print ";}";
+				; else if vareq fcode; 4; then
+					print "// end-if";
+				; else if vareq fcode; 5; then; else
+					print ")";
+				;;;;;;
+				if vareq fstack; list;; then
+					print ";";
+				; else
+					let_head_tail lower_fstack_tos; lower_fstack; fstack;;
+					let_head_tail lower_tos; even_lower_parse_stack; lower_parse_stack;;
+					if vareq lower_tos; list;; then; else
+						if vareq lower_fstack_tos; 1; then
+							print ",";
+						; else if vareq lower_fstack_tos; 3; then
+							print ";";
+						; else if vareq lower_fstack_tos; 2; then
+							print ".v.v) // if-condition end";
+							set lower_fstack_tos; 4;
+						; else if vareq lower_fstack_tos; 6; then
+							print ".v.v) {";
+							set lower_fstack_tos; 3;
+						;;;;;;;;
+					;;
+					set lower_parse_stack; concat list lower_tos;; even_lower_parse_stack;;;
+					set fstack; concat list lower_fstack_tos;; lower_fstack;;;
+				print "//seems fine";
+			;;
+			;;
+			set parse_stack; lower_parse_stack;;
+		; else 
+			if vareq fstack; list;; then
+				print ";";
+			; else
+				let_head_tail lower_fstack_tos; lower_fstack; fstack;;
+				if vareq lower_fstack_tos; 6; then
+					print ".v.v) {";
+					set lower_fstack_tos; 3;
+				; else
+					print ", // 2";
+				;;
+				set fstack; concat list lower_fstack_tos;; lower_fstack;;;
+			;;
+			set parse_stack; concat list tos;; lower_parse_stack;;;
+		;;
+	;;
+;
+print "}";
