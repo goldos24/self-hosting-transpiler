@@ -27,34 +27,34 @@ while eq  vareq code; list;;  0;
 		;;
 		if vareq c; 34; then
 			if vareq current_token; list;; then; else
-				set result; concat result; list current_token;;;;
+				result = concat result; list current_token;;;;
 			;;
-			set result; concat result; list list 34;;;;
-			set in_string; 1;
-			set current_token; list;;
+			result = concat result; list list 34;;;;
+			in_string = 1;
+			current_token = list;;
 		; else if vareq c; 59; then
 			if vareq current_token; list;; then; else
-				set result; concat result; list current_token;;;;
+				result = concat result; list current_token;;;;
 			;;
-			set result; concat result; list ";";;;
-			set current_token; list;;
+			result = concat result; list ";";;;
+			current_token = list;;
 		; else if vareq c; 61; then
 			if vareq current_token; list;; then; else
-				set result; concat result; list current_token;;;;
+				result = concat result; list current_token;;;;
 			;;
-			set result; concat result; list "=";;;
-			set current_token; list;;
+			result = concat result; list "=";;;
+			current_token = list;;
 		; else if eq whitespace; 1; then
 			if vareq current_token; list;; then; else
-				set result; concat result; list current_token;;;;
+				result = concat result; list current_token;;;;
 			;;
-			set current_token; list;;
+			current_token = list;;
 		; else 
-			set current_token; concat current_token; list c;;;;
+			current_token = concat current_token; list c;;;;
 			"print //normal char";
 		;;;;;;;
 	;;
-	set code; new_code;;
+	code = new_code;;
 ;
 var parse_stack = list list;;;
 while eq vareq result; list;; 0;
@@ -66,16 +66,16 @@ while eq vareq result; list;; 0;
 		let_head_tail current_digit; following_digits; digits;;
 		if vareq first_token_char; current_digit;; then
 			let_head_tail tos; lower_parse_stack; parse_stack;;
-			set token; concat list first_token_char;; token_remainder;;;
-			set tos; concat tos; list 0 token;;;;
-			set parse_stack; concat list tos;; lower_parse_stack;;;
-			set unparsed; 0;
+			token = concat list first_token_char;; token_remainder;;;
+			tos = concat tos; list 0 token;;;;
+			parse_stack = concat list tos;; lower_parse_stack;;;
+			unparsed = 0;
 		;;
 		if vareq unparsed; 1; then
-			set digits; following_digits;;
+			digits = following_digits;;
 		; else 
 			print "// an int";
-			set digits; list;;
+			digits = list;;
 		;;
 	;
 	if unparsed; then
@@ -84,24 +84,24 @@ while eq vareq result; list;; 0;
 			let_head_tail string_contents; tokens_after_content; next_tokens;;
 			let_head_tail _; tokens_after_string; tokens_after_content;;
 			let_head_tail tos; lower_parse_stack; parse_stack;;
-			set tos; concat tos; list 1 string_contents;;;;
-			set parse_stack; concat list tos;; lower_parse_stack;;;
-			set next_tokens; tokens_after_string;;
+			tos = concat tos; list 1 string_contents;;;;
+			parse_stack = concat list tos;; lower_parse_stack;;;
+			next_tokens = tokens_after_string;;
 		; else
 			print "//not a string";
 			if vareq first_token_char; 59; then
 				print "// an end of function call";
 				let_head_tail tba; new_parse_stack; parse_stack;;
 				let_head_tail tos; lower_parse_stack; new_parse_stack;;
-				set tos; concat tos; list 2 tba;;;;
-				set parse_stack; concat list tos;; lower_parse_stack;;;
+				tos = concat tos; list 2 tba;;;;
+				parse_stack = concat list tos;; lower_parse_stack;;;
 			; else if vareq token; "="; then
 				let_head_tail tos; lower_parse_stack; parse_stack;;
-				set tos; list "set" 2 tos;;;
-				set parse_stack; concat list tos;; lower_parse_stack;;;
+				tos = list "set" 2 tos;;;
+				parse_stack = concat list tos;; lower_parse_stack;;;
 			; else
 				print "// a function call";
-				set token; concat list first_token_char;; token_remainder;;;
+				token = concat list first_token_char;; token_remainder;;;
 				if vareq token; "var"; then
 					print "// var statement detected";
 					let_head_tail name_token; tokens_after_name; next_tokens;;
@@ -112,18 +112,18 @@ while eq vareq result; list;; 0;
 					print "*/";
 					if eq equals_token; "="; then
 						var var_node = list "let";;
-						set next_tokens; concat list name_token; ";"; tokens_after_equals;;;
-						set parse_stack; concat list var_node;; parse_stack;;;
+						next_tokens = concat list name_token; ";"; tokens_after_equals;;;
+						parse_stack = concat list var_node;; parse_stack;;;
 					; else
 						print "#error var statement without equals sign";
 					;;
 				; else
-					set parse_stack; concat list list token;;; parse_stack;;;
+					parse_stack = concat list list token;;; parse_stack;;;
 				;;
 			;;;;
 		;;
 	;;
-	set result; next_tokens;;	
+	result = next_tokens;;	
 ;
 print "//starting emitter...";
 var fstack = list;;
@@ -256,7 +256,7 @@ while eq vareq parse_stack; list;; 0;
 	if eq vareq tos; list;; 0; then
 		let_head_tail type; further; tos;;
 		let_head_tail content; next_tos; further;;
-		set tos; next_tos;;
+		tos = next_tos;;
 		if vareq type; 0; then
 			print concat "__mkint(" content; ")";;
 		; else if vareq type; 1; then
@@ -265,24 +265,24 @@ while eq vareq parse_stack; list;; 0;
 			let_head_tail fname; ftos; content;;
 			var fcode = 1;
 			if vareq fname; "if"; then
-				set fcode; 2;
+				fcode = 2;
 			; else if vareq fname; "then"; then
-				set fcode; 3;
+				fcode = 3;
 			; else if vareq fname; "else"; then
-				set fcode; 3;
+				fcode = 3;
 			; else if vareq fname; "while"; then
-				set fcode; 6;
+				fcode = 6;
 			;;;;;;;;
 			if vareq fname; "list"; then
 				if vareq ftos; list;; then
-					set fname; "__mk_elist()";
+					fname = "__mk_elist()";
 				; else
-					set fname; "concat";
+					fname = "concat";
 					let_head_tail first_type; follow1; ftos;;
 					let_head_tail first_content; follow2; follow1;;
 					var first_param = list "__slist" first_type; first_content;;;
 					var second_param = concat list "list"; follow2;;;
-					set ftos; list 2 first_param; 2 second_param;;;
+					ftos = list 2 first_param; 2 second_param;;;
 				;;
 			;;
 			if vareq fname; "concat"; then
@@ -292,17 +292,17 @@ while eq vareq parse_stack; list;; 0;
 				let_head_tail first_type; follow1; ftos;;
 				let_head_tail first_content; follow2; follow1;;
 				if vareq follow2; list;; then
-					set fname; "__pass";
-					set ftos; list first_type; first_content;;;
+					fname = "__pass";
+					ftos = list first_type; first_content;;;
 				; else
 					var next_fcall = concat list "concat"; follow2;;;
-					set ftos; list first_type; first_content; 2 next_fcall;;;
+					ftos = list first_type; first_content; 2 next_fcall;;;
 				;;
 			;;
 			if eq vareq fname; "then"; 0; then
 				print fname;;
 				if vareq ftos; list;; then
-					set fcode; 5;
+					fcode = 5;
 				;;
 			;;
 			if vareq fcode; 3; then
@@ -310,9 +310,9 @@ while eq vareq parse_stack; list;; 0;
 			; else if vareq fcode; 5; then; else
 				print "(";
 			;;;;
-			set fstack; concat list fcode;; fstack;;;
-			set parse_stack; concat list ftos;; list tos;; lower_parse_stack;;;
-			set fcall; 1;
+			fstack = concat list fcode;; fstack;;;
+			parse_stack = concat list ftos;; list tos;; lower_parse_stack;;;
+			fcall = 1;
 		; else
 			print "#error AST corrupted";	
 		;;;;;;
@@ -324,7 +324,7 @@ while eq vareq parse_stack; list;; 0;
 				print "// Should stop emitting now";
 			; else
 				let_head_tail fcode; new_fstack; fstack;;
-				set fstack; new_fstack;;
+				fstack = new_fstack;;
 				if vareq fcode; 3; then
 					print ";}";
 				; else if vareq fcode; 4; then
@@ -344,18 +344,18 @@ while eq vareq parse_stack; list;; 0;
 							print ";";
 						; else if vareq lower_fstack_tos; 2; then
 							print ".v.v) // if-condition end";
-							set lower_fstack_tos; 4;
+							lower_fstack_tos = 4;
 						; else if vareq lower_fstack_tos; 6; then
 							print ".v.v) {";
-							set lower_fstack_tos; 3;
+							lower_fstack_tos = 3;
 						;;;;;;;;
 					;;
-					set lower_parse_stack; concat list lower_tos;; even_lower_parse_stack;;;
-					set fstack; concat list lower_fstack_tos;; lower_fstack;;;
+					lower_parse_stack = concat list lower_tos;; even_lower_parse_stack;;;
+					fstack = concat list lower_fstack_tos;; lower_fstack;;;
 				print "//seems fine";
 			;;
 			;;
-			set parse_stack; lower_parse_stack;;
+			parse_stack = lower_parse_stack;;
 		; else 
 			if vareq fstack; list;; then
 				print ";";
@@ -363,13 +363,13 @@ while eq vareq parse_stack; list;; 0;
 				let_head_tail lower_fstack_tos; lower_fstack; fstack;;
 				if vareq lower_fstack_tos; 6; then
 					print ".v.v) {";
-					set lower_fstack_tos; 3;
+					lower_fstack_tos = 3;
 				; else
 					print ", // 2";
 				;;
-				set fstack; concat list lower_fstack_tos;; lower_fstack;;;
+				fstack = concat list lower_fstack_tos;; lower_fstack;;;
 			;;
-			set parse_stack; concat list tos;; lower_parse_stack;;;
+			parse_stack = concat list tos;; lower_parse_stack;;;
 		;;
 	;;
 ;
