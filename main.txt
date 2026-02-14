@@ -16,53 +16,53 @@ while code != "";;
 		;;
 	; else
 		var whitespace = 0;
-		if vareq c; 32; then
+		if c == 32; then
 			whitespace = 1;
 		;;
-		if vareq c; 10; then
+		if c == 10; then
 			whitespace = 1;
 		;;
-		if vareq c; 9; then
+		if c == 9; then
 			whitespace = 1;
 		;;
-		if vareq c; 34; then
-			if vareq current_token; list;; then; else
+		if c == 34; then
+			if current_token == ""; then; else
 				result = concat result; list current_token;;;;
 			;;
 			result = concat result; list list 34;;;;
 			in_string = 1;
-			current_token = list;;
-		; else if vareq c; 59; then
-			if vareq current_token; list;; then; else
+			current_token = "";
+		; else if c == 59; then
+			if current_token == ""; then; else
 				result = concat result; list current_token;;;;
 			;;
 			result = concat result; list ";";;;
-			current_token = list;;
-		; else if vareq c; 61; then
-			if vareq current_token; list;; then; else
+			current_token = "";
+		; else if c == 61; then
+			if current_token == ""; then; else
 				result = concat result; list current_token;;;;
 			;;
 			var next_char : remaining_code = new_code;;
-			if eq next_char; 61; then
+			if next_char == 61; then
 				new_code = remaining_code;;
 				result = concat result; list "==";;;
-				current_token = list;;
+				current_token = "";
 			; else
 				new_code = concat list next_char;; remaining_code;;;
 				result = concat result; list "=";;;
-				current_token = list;;
+				current_token = "";
 			;;
 		; else if c == 33; then
 			var equals_sign : remaining_code = new_code;;
 			if equals_sign == 61; then
 				new_code = remaining_code;;
 				result = concat result; list "!=";;;
-				current_token = list;;
+				current_token = "";
 			; else
 				print "#error not an != sign";
 			;;
-		; else if eq whitespace; 1; then
-			if vareq current_token; list;; then; else
+		; else if whitespace == 1; then
+			if current_token == ""; then; else
 				result = concat result; list current_token;;;;
 			;;
 			current_token = list;;
