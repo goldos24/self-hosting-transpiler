@@ -125,6 +125,12 @@ current_token
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+c
+:
+*/
+// var destructuring detected
 //not an int
 //not a string
 // a function call
@@ -1124,6 +1130,12 @@ unparsed
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+token
+:
+*/
+// var destructuring detected
 //not an int
 //not a string
 // a function call
@@ -1148,6 +1160,12 @@ unparsed
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+first_token_char
+:
+*/
+// var destructuring detected
 //not an int
 //not a string
 // a function call
@@ -1233,6 +1251,12 @@ digits
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+current_digit
+:
+*/
+// var destructuring detected
 //not an int
 //not a string
 // a function call
@@ -1281,6 +1305,12 @@ digits
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+tos
+:
+*/
+// var destructuring detected
 //not an int
 //not a string
 // a function call
@@ -1328,265 +1358,6 @@ digits
 //not an int
 //not a string
 // an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-// an int
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-// an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-// an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
 //not an int
 //not a string
 // an end of function call
@@ -1663,6 +1434,40 @@ digits
 // a function call
 //not an int
 //not a string
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
 //not an int
 //not a string
 // a function call
@@ -1672,6 +1477,48 @@ digits
 //not an int
 //not a string
 // an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
 //not an int
 //not a string
 // an end of function call
@@ -1707,19 +1554,12 @@ digits
 //not an int
 //not a string
 // a function call
-//not an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
+// var statement detected
+/*
+string_contents
+:
+*/
+// var destructuring detected
 //not an int
 //not a string
 // a function call
@@ -1734,10 +1574,52 @@ digits
 // an end of function call
 //not an int
 //not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
 // an end of function call
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+_
+:
+*/
+// var destructuring detected
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+// var statement detected
+/*
+tos
+:
+*/
+// var destructuring detected
 //not an int
 //not a string
 // a function call
@@ -1826,6 +1708,184 @@ digits
 // an end of function call
 //not an int
 //not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+// var statement detected
+/*
+tba
+:
+*/
+// var destructuring detected
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+// var statement detected
+/*
+tos
+:
+*/
+// var destructuring detected
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+// an int
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
 // an end of function call
 //not an int
 //not a string
@@ -1852,6 +1912,12 @@ digits
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+tos
+:
+*/
+// var destructuring detected
 //not an int
 //not a string
 // a function call
@@ -2001,6 +2067,12 @@ digits
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+name_token
+:
+*/
+// var destructuring detected
 //not an int
 //not a string
 // a function call
@@ -2025,6 +2097,12 @@ digits
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+equals_token
+:
+*/
+// var destructuring detected
 //not an int
 //not a string
 // a function call
@@ -2202,6 +2280,304 @@ var_node
 //not a string
 // a function call
 //not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+// var statement detected
+/*
+tail_name_token
+:
+*/
+// var destructuring detected
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+// var statement detected
+/*
+destr_equals_token
+:
+*/
+// var destructuring detected
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+// var statement detected
+/*
+var_node
+=
+*/
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+// var statement detected
+/*
+semicolon_token
+=
+*/
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -3224,6 +3600,12 @@ fstack
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+tos
+:
+*/
+// var destructuring detected
 //not an int
 //not a string
 // a function call
@@ -3297,6 +3679,42 @@ fcall
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+type
+:
+*/
+// var destructuring detected
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+// var statement detected
+/*
+content
+:
+*/
+// var destructuring detected
 //not an int
 //not a string
 // a function call
@@ -3323,16 +3741,6 @@ fcall
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -3342,65 +3750,6 @@ fcall
 //not an int
 //not a string
 // an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-// an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
 //not an int
 //not a string
 // a function call
@@ -3430,20 +3779,6 @@ fcall
 //not an int
 //not a string
 // a function call
-// an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-// an int
 //not an int
 //not a string
 // an end of function call
@@ -3482,6 +3817,71 @@ fcall
 //not an int
 //not a string
 // a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not an int
+//not a string
+// a function call
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+// var statement detected
+/*
+fname
+:
+*/
+// var destructuring detected
 //not an int
 //not a string
 // a function call
@@ -3745,6 +4145,12 @@ fcode
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+first_type
+:
+*/
+// var destructuring detected
 //not an int
 //not a string
 // a function call
@@ -3769,6 +4175,12 @@ fcode
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+first_content
+:
+*/
+// var destructuring detected
 //not an int
 //not a string
 // a function call
@@ -3961,6 +4373,12 @@ second_param
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+first_type
+:
+*/
+// var destructuring detected
 //not an int
 //not a string
 // a function call
@@ -3985,6 +4403,12 @@ second_param
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+first_content
+:
+*/
+// var destructuring detected
 //not an int
 //not a string
 // a function call
@@ -4523,6 +4947,12 @@ next_fcall
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+fcode
+:
+*/
+// var destructuring detected
 //not an int
 //not a string
 // a function call
@@ -4712,6 +5142,42 @@ next_fcall
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+lower_fstack_tos
+:
+*/
+// var destructuring detected
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+// var statement detected
+/*
+lower_tos
+:
+*/
+// var destructuring detected
 //not an int
 //not a string
 // a function call
@@ -4741,9 +5207,6 @@ next_fcall
 // a function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
 // a function call
 //not an int
 //not a string
@@ -4760,59 +5223,6 @@ next_fcall
 //not an int
 //not a string
 // a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-// an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -4879,15 +5289,6 @@ next_fcall
 // an end of function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
 // an end of function call
 //not an int
 //not a string
@@ -4932,6 +5333,47 @@ next_fcall
 // an end of function call
 //not an int
 //not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
 // an end of function call
 //not an int
 //not a string
@@ -5100,6 +5542,12 @@ next_fcall
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+lower_fstack_tos
+:
+*/
+// var destructuring detected
 //not an int
 //not a string
 // a function call
@@ -7890,11 +8338,362 @@ parse_stack
 //seems fine
 else
 {
+if
+(
+vareq
+(
+equals_token
+//empty ToS
+,
+//seems fine
+concat
+(
+__slist
+(
+__mkint(58)
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+__mk_elist()
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+print
+(
+__mkstr("// var destructuring detected")
+//empty ToS
+)
+;
+//seems fine
+let_head_tail
+(
+tail_name_token
+//empty ToS
+,
+//seems fine
+tokens_after_tail_name
+//empty ToS
+,
+//seems fine
+tokens_after_equals
+//empty ToS
+//seems fine
+//empty ToS
+)
+;
+//seems fine
+let_head_tail
+(
+destr_equals_token
+//empty ToS
+,
+//seems fine
+tokens_after_destr_equals
+//empty ToS
+,
+//seems fine
+tokens_after_tail_name
+//empty ToS
+//seems fine
+//empty ToS
+)
+;
+//seems fine
+if
+(
+eq
+(
+destr_equals_token
+//empty ToS
+,
+//seems fine
+__mkstr("=")
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+let
+(
+var_node
+//empty ToS
+,
+//seems fine
+concat
+(
+__slist
+(
+__mkstr("let_head_tail")
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+__mk_elist()
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+;
+//seems fine
+let
+(
+semicolon_token
+//empty ToS
+,
+//seems fine
+concat
+(
+__slist
+(
+__mkint(59)
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+__mk_elist()
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+;
+//seems fine
+set
+(
+next_tokens
+//empty ToS
+,
+//seems fine
+concat
+(
+concat
+(
+__slist
+(
+tail_name_token
+//empty ToS
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+concat
+(
+__slist
+(
+semicolon_token
+//empty ToS
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+__mk_elist()
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+tokens_after_destr_equals
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+;
+//seems fine
+set
+(
+next_tokens
+//empty ToS
+,
+//seems fine
+concat
+(
+concat
+(
+__slist
+(
+name_token
+//empty ToS
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+concat
+(
+__slist
+(
+semicolon_token
+//empty ToS
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+__mk_elist()
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+next_tokens
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+;
+//seems fine
+set
+(
+parse_stack
+//empty ToS
+,
+//seems fine
+concat
+(
+concat
+(
+__slist
+(
+var_node
+//empty ToS
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+__mk_elist()
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+parse_stack
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+;}
+//seems fine
+else
+{
+print
+(
+__mkstr("#error var destructuring without equals sign")
+//empty ToS
+)
+//seems fine
+//empty ToS
+;}
+//seems fine
+//empty ToS
+// end-if
+//seems fine
+//empty ToS
+;}
+//seems fine
+else
+{
 print
 (
 __mkstr("#error var statement without equals sign")
 //empty ToS
 )
+//seems fine
+//empty ToS
+;}
+//seems fine
+//empty ToS
+// end-if
 //seems fine
 //empty ToS
 ;}
