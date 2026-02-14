@@ -160,10 +160,6 @@ c
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -821,6 +817,69 @@ whitespace
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+next_char
+:
+*/
+// var destructuring detected
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
 //not an int
 //not a string
 //not an int
@@ -853,6 +912,91 @@ whitespace
 //not an int
 //not a string
 // a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -2003,6 +2147,111 @@ tos
 //not a string
 // a function call
 //not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+// var statement detected
+/*
+tos
+:
+*/
+// var destructuring detected
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+// an int
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
 //not an int
 //not a string
 // an end of function call
@@ -2622,6 +2871,12 @@ semicolon_token
 //not an int
 //not a string
 // a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -5935,7 +6190,7 @@ code
 //seems fine
 if
 (
-vareq
+eq
 (
 in_string
 //empty ToS
@@ -6671,6 +6926,157 @@ __mk_elist()
 // end-if
 ;
 //seems fine
+let_head_tail
+(
+next_char
+//empty ToS
+,
+//seems fine
+remaining_code
+//empty ToS
+,
+//seems fine
+new_code
+//empty ToS
+//seems fine
+//empty ToS
+)
+;
+//seems fine
+if
+(
+eq
+(
+next_char
+//empty ToS
+,
+//seems fine
+__mkint(61)
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+set
+(
+new_code
+//empty ToS
+,
+//seems fine
+remaining_code
+//empty ToS
+//seems fine
+//empty ToS
+)
+;
+//seems fine
+set
+(
+result
+//empty ToS
+,
+//seems fine
+concat
+(
+result
+//empty ToS
+,
+//seems fine
+__pass
+(
+concat
+(
+__slist
+(
+__mkstr("==")
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+__mk_elist()
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+;
+//seems fine
+set
+(
+current_token
+//empty ToS
+,
+//seems fine
+__mk_elist()
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+;}
+//seems fine
+else
+{
+set
+(
+new_code
+//empty ToS
+,
+//seems fine
+concat
+(
+concat
+(
+__slist
+(
+next_char
+//empty ToS
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+__mk_elist()
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+remaining_code
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+;
+//seems fine
 set
 (
 result
@@ -6726,6 +7132,12 @@ __mk_elist()
 //seems fine
 //empty ToS
 )
+//seems fine
+//empty ToS
+;}
+//seems fine
+//empty ToS
+// end-if
 //seems fine
 //empty ToS
 ;}
@@ -8041,6 +8453,153 @@ lower_parse_stack
 //seems fine
 else
 {
+if
+(
+eq
+(
+token
+//empty ToS
+,
+//seems fine
+__mkstr("==")
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+let_head_tail
+(
+tos
+//empty ToS
+,
+//seems fine
+lower_parse_stack
+//empty ToS
+,
+//seems fine
+parse_stack
+//empty ToS
+//seems fine
+//empty ToS
+)
+;
+//seems fine
+set
+(
+tos
+//empty ToS
+,
+//seems fine
+concat
+(
+__slist
+(
+__mkstr("eq")
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+concat
+(
+__slist
+(
+__mkint(2)
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+concat
+(
+__slist
+(
+tos
+//empty ToS
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+__mk_elist()
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+;
+//seems fine
+set
+(
+parse_stack
+//empty ToS
+,
+//seems fine
+concat
+(
+concat
+(
+__slist
+(
+tos
+//empty ToS
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+__mk_elist()
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+lower_parse_stack
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+;}
+//seems fine
+else
+{
 print
 (
 __mkstr("// a function call")
@@ -8769,6 +9328,12 @@ parse_stack
 //seems fine
 //empty ToS
 )
+//seems fine
+//empty ToS
+;}
+//seems fine
+//empty ToS
+// end-if
 //seems fine
 //empty ToS
 ;}

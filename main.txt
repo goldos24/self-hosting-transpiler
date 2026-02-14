@@ -5,7 +5,7 @@ var in_string = 0;
 var current_token = list;;
 while eq  vareq code; list;;  0;
 	var c : new_code = code;;
-	if vareq in_string; 1; then
+	if in_string == 1; then
 		if vareq c; 34; then
 			in_string = 0;
 			result = concat result; list current_token;;;;
@@ -42,8 +42,16 @@ while eq  vareq code; list;;  0;
 			if vareq current_token; list;; then; else
 				result = concat result; list current_token;;;;
 			;;
-			result = concat result; list "=";;;
-			current_token = list;;
+			var next_char : remaining_code = new_code;;
+			if eq next_char; 61; then
+				new_code = remaining_code;;
+				result = concat result; list "==";;;
+				current_token = list;;
+			; else
+				new_code = concat list next_char;; remaining_code;;;
+				result = concat result; list "=";;;
+				current_token = list;;
+			;;
 		; else if eq whitespace; 1; then
 			if vareq current_token; list;; then; else
 				result = concat result; list current_token;;;;
@@ -99,6 +107,10 @@ while eq vareq result; list;; 0;
 				var tos : lower_parse_stack = parse_stack;;
 				tos = list "set" 2 tos;;;
 				parse_stack = concat list tos;; lower_parse_stack;;;
+			; else if token == "=="; then
+				var tos : lower_parse_stack = parse_stack;;
+				tos = list "eq" 2 tos;;;
+				parse_stack = concat list tos;; lower_parse_stack;;;
 			; else
 				print "// a function call";
 				token = concat list first_token_char;; token_remainder;;;
@@ -133,7 +145,7 @@ while eq vareq result; list;; 0;
 				; else
 					parse_stack = concat list list token;;; parse_stack;;;
 				;;
-			;;;;
+			;;;;;;
 		;;
 	;;
 	result = next_tokens;;	
