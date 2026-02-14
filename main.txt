@@ -3,7 +3,7 @@ print "//Tokenizing...";
 var result = list;;
 var in_string = 0;
 var current_token = list;;
-while eq  vareq code; list;;  0;
+while code != "";;
 	var c : new_code = code;;
 	if in_string == 1; then
 		if vareq c; 34; then
@@ -52,6 +52,15 @@ while eq  vareq code; list;;  0;
 				result = concat result; list "=";;;
 				current_token = list;;
 			;;
+		; else if c == 33; then
+			var equals_sign : remaining_code = new_code;;
+			if equals_sign == 61; then
+				new_code = remaining_code;;
+				result = concat result; list "!=";;;
+				current_token = list;;
+			; else
+				print "#error not an != sign";
+			;;
 		; else if eq whitespace; 1; then
 			if vareq current_token; list;; then; else
 				result = concat result; list current_token;;;;
@@ -60,7 +69,7 @@ while eq  vareq code; list;;  0;
 		; else 
 			current_token = concat current_token; list c;;;;
 			"print //normal char";
-		;;;;;;;
+		;;;;;;;;;
 	;;
 	code = new_code;;
 ;
@@ -111,6 +120,11 @@ while eq vareq result; list;; 0;
 				var tos : lower_parse_stack = parse_stack;;
 				tos = list "eq" 2 tos;;;
 				parse_stack = concat list tos;; lower_parse_stack;;;
+			; else if token == "!="; then
+				var tos : lower_parse_stack = parse_stack;;
+				tos = list "eq" 2 tos;;;
+				var not_function = list "eq" 0 "0";;
+				parse_stack = concat list tos; not_function;; lower_parse_stack;;;
 			; else
 				print "// a function call";
 				token = concat list first_token_char;; token_remainder;;;
@@ -145,7 +159,7 @@ while eq vareq result; list;; 0;
 				; else
 					parse_stack = concat list list token;;; parse_stack;;;
 				;;
-			;;;;;;
+			;;;;;;;;
 		;;
 	;;
 	result = next_tokens;;	
