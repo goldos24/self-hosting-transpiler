@@ -337,10 +337,6 @@ whitespace
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -371,10 +367,6 @@ whitespace
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -405,10 +397,6 @@ whitespace
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -439,10 +427,6 @@ whitespace
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -458,16 +442,7 @@ whitespace
 // a function call
 //not an int
 //not a string
-// a function call
 //not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -566,8 +541,6 @@ whitespace
 //not an int
 //not a string
 //not an int
-//not a string
-// a function call
 //not an int
 //not a string
 // an end of function call
@@ -576,9 +549,6 @@ whitespace
 // an end of function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
 // a function call
 //not an int
 //not a string
@@ -588,10 +558,6 @@ whitespace
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -607,16 +573,7 @@ whitespace
 // a function call
 //not an int
 //not a string
-// a function call
 //not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -700,8 +657,6 @@ whitespace
 //not an int
 //not a string
 //not an int
-//not a string
-// a function call
 //not an int
 //not a string
 // an end of function call
@@ -710,9 +665,6 @@ whitespace
 // an end of function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
 // a function call
 //not an int
 //not a string
@@ -722,10 +674,6 @@ whitespace
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -741,16 +689,7 @@ whitespace
 // a function call
 //not an int
 //not a string
-// a function call
 //not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -839,10 +778,6 @@ next_char
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -897,11 +832,6 @@ next_char
 //not an int
 //not a string
 //not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -976,11 +906,6 @@ next_char
 //not an int
 //not a string
 //not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -1103,11 +1028,6 @@ equals_sign
 //not an int
 //not a string
 //not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -1144,10 +1064,6 @@ equals_sign
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -1163,16 +1079,7 @@ equals_sign
 // a function call
 //not an int
 //not a string
-// a function call
 //not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -1366,13 +1273,6 @@ parse_stack
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -1382,7 +1282,6 @@ parse_stack
 //not an int
 //not a string
 // an end of function call
-// an int
 //not an int
 //not a string
 // an end of function call
@@ -1479,21 +1378,6 @@ digits
 //not a string
 // an end of function call
 //not an int
-//not a string
-// a function call
-// an int
-// an int
-// an int
-// an int
-// an int
-// an int
-// an int
-// an int
-// an int
-// an int
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -1505,23 +1389,10 @@ digits
 // a function call
 //not an int
 //not a string
-// a function call
 //not an int
-//not a string
-// a function call
 //not an int
 //not a string
 // an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-// an int
 //not an int
 //not a string
 // an end of function call
@@ -1563,10 +1434,6 @@ current_digit
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -1729,10 +1596,6 @@ tos
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -1817,10 +1680,6 @@ tos
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -2018,10 +1877,6 @@ tos
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -2175,10 +2030,6 @@ tos
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not an int
 //not a string
@@ -2565,10 +2416,6 @@ not_function
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not an int
 //not a string
@@ -2689,10 +2536,6 @@ equals_token
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not an int
 //not a string
@@ -2803,17 +2646,7 @@ var_node
 // a function call
 //not an int
 //not a string
-// a function call
 //not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-// an int
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -2895,10 +2728,6 @@ destr_equals_token
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not an int
 //not a string
@@ -4108,13 +3937,6 @@ fstack
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -4124,7 +3946,6 @@ fstack
 //not an int
 //not a string
 // an end of function call
-// an int
 //not an int
 //not a string
 // an end of function call
@@ -4184,13 +4005,6 @@ fcall
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -4200,7 +4014,6 @@ fcall
 //not an int
 //not a string
 // an end of function call
-// an int
 //not an int
 //not a string
 // an end of function call
@@ -4289,10 +4102,6 @@ content
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -4334,10 +4143,6 @@ content
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -4393,10 +4198,6 @@ content
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -4460,10 +4261,6 @@ fcode
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not an int
 //not a string
@@ -4494,10 +4291,6 @@ fcode
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not an int
 //not a string
@@ -4528,10 +4321,6 @@ fcode
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not an int
 //not a string
@@ -4562,10 +4351,6 @@ fcode
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not an int
 //not a string
@@ -4614,10 +4399,6 @@ fcode
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not an int
 //not a string
@@ -4633,10 +4414,6 @@ fcode
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -4853,10 +4630,6 @@ second_param
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not an int
 //not a string
@@ -4872,10 +4645,6 @@ second_param
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -4969,10 +4738,6 @@ first_content
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -5115,18 +4880,10 @@ next_fcall
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not an int
 //not a string
 // an end of function call
-// an int
 //not an int
 //not a string
 // an end of function call
@@ -5198,10 +4955,6 @@ next_fcall
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -5230,10 +4983,6 @@ next_fcall
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -5396,10 +5145,6 @@ next_fcall
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -5415,10 +5160,6 @@ next_fcall
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -5446,10 +5187,6 @@ next_fcall
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -5527,10 +5264,6 @@ fcode
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -5559,10 +5292,6 @@ fcode
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -5591,10 +5320,6 @@ fcode
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -5641,10 +5366,6 @@ fcode
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -5738,10 +5459,6 @@ lower_tos
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -5768,10 +5485,6 @@ lower_tos
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -5800,10 +5513,6 @@ lower_tos
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -5832,10 +5541,6 @@ lower_tos
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -5873,10 +5578,6 @@ lower_tos
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -6041,10 +5742,6 @@ lower_tos
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -6108,10 +5805,6 @@ lower_fstack_tos
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -6696,7 +6389,7 @@ __mkint(0)
 //seems fine
 if
 (
-vareq
+eq
 (
 c
 //empty ToS
@@ -6727,7 +6420,7 @@ __mkint(1)
 //seems fine
 if
 (
-vareq
+eq
 (
 c
 //empty ToS
@@ -6758,7 +6451,7 @@ __mkint(1)
 //seems fine
 if
 (
-vareq
+eq
 (
 c
 //empty ToS
@@ -6789,7 +6482,7 @@ __mkint(1)
 //seems fine
 if
 (
-vareq
+eq
 (
 c
 //empty ToS
@@ -6803,15 +6496,13 @@ __mkint(34)
 {
 if
 (
-vareq
+eq
 (
 current_token
 //empty ToS
 ,
 //seems fine
-__mk_elist()
-//empty ToS
-//seems fine
+__mkstr("")
 //empty ToS
 )
 .v.v) // if-condition end
@@ -6954,9 +6645,7 @@ current_token
 //empty ToS
 ,
 //seems fine
-__mk_elist()
-//empty ToS
-//seems fine
+__mkstr("")
 //empty ToS
 )
 //seems fine
@@ -6967,7 +6656,7 @@ else
 {
 if
 (
-vareq
+eq
 (
 c
 //empty ToS
@@ -6981,15 +6670,13 @@ __mkint(59)
 {
 if
 (
-vareq
+eq
 (
 current_token
 //empty ToS
 ,
 //seems fine
-__mk_elist()
-//empty ToS
-//seems fine
+__mkstr("")
 //empty ToS
 )
 .v.v) // if-condition end
@@ -7102,9 +6789,7 @@ current_token
 //empty ToS
 ,
 //seems fine
-__mk_elist()
-//empty ToS
-//seems fine
+__mkstr("")
 //empty ToS
 )
 //seems fine
@@ -7115,7 +6800,7 @@ else
 {
 if
 (
-vareq
+eq
 (
 c
 //empty ToS
@@ -7129,15 +6814,13 @@ __mkint(61)
 {
 if
 (
-vareq
+eq
 (
 current_token
 //empty ToS
 ,
 //seems fine
-__mk_elist()
-//empty ToS
-//seems fine
+__mkstr("")
 //empty ToS
 )
 .v.v) // if-condition end
@@ -7294,9 +6977,7 @@ current_token
 //empty ToS
 ,
 //seems fine
-__mk_elist()
-//empty ToS
-//seems fine
+__mkstr("")
 //empty ToS
 )
 //seems fine
@@ -7401,9 +7082,7 @@ current_token
 //empty ToS
 ,
 //seems fine
-__mk_elist()
-//empty ToS
-//seems fine
+__mkstr("")
 //empty ToS
 )
 //seems fine
@@ -7526,9 +7205,7 @@ current_token
 //empty ToS
 ,
 //seems fine
-__mk_elist()
-//empty ToS
-//seems fine
+__mkstr("")
 //empty ToS
 )
 //seems fine
@@ -7570,15 +7247,13 @@ __mkint(1)
 {
 if
 (
-vareq
+eq
 (
 current_token
 //empty ToS
 ,
 //seems fine
-__mk_elist()
-//empty ToS
-//seems fine
+__mkstr("")
 //empty ToS
 )
 .v.v) // if-condition end
@@ -7792,7 +7467,9 @@ while
 (
 eq
 (
-vareq
+__mkint(0)
+, // 2
+eq
 (
 result
 //empty ToS
@@ -7803,9 +7480,7 @@ __mk_elist()
 //seems fine
 //empty ToS
 )
-,
 //seems fine
-__mkint(0)
 //empty ToS
 )
 .v.v) {
@@ -7861,179 +7536,7 @@ digits
 //empty ToS
 ,
 //seems fine
-concat
-(
-__slist
-(
-__mkint(48)
-//empty ToS
-)
-,
-//seems fine
-__pass
-(
-concat
-(
-__slist
-(
-__mkint(49)
-//empty ToS
-)
-,
-//seems fine
-__pass
-(
-concat
-(
-__slist
-(
-__mkint(50)
-//empty ToS
-)
-,
-//seems fine
-__pass
-(
-concat
-(
-__slist
-(
-__mkint(51)
-//empty ToS
-)
-,
-//seems fine
-__pass
-(
-concat
-(
-__slist
-(
-__mkint(52)
-//empty ToS
-)
-,
-//seems fine
-__pass
-(
-concat
-(
-__slist
-(
-__mkint(53)
-//empty ToS
-)
-,
-//seems fine
-__pass
-(
-concat
-(
-__slist
-(
-__mkint(54)
-//empty ToS
-)
-,
-//seems fine
-__pass
-(
-concat
-(
-__slist
-(
-__mkint(55)
-//empty ToS
-)
-,
-//seems fine
-__pass
-(
-concat
-(
-__slist
-(
-__mkint(56)
-//empty ToS
-)
-,
-//seems fine
-__pass
-(
-concat
-(
-__slist
-(
-__mkint(57)
-//empty ToS
-)
-,
-//seems fine
-__pass
-(
-__mk_elist()
-//empty ToS
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
+__mkstr("0123456789")
 //empty ToS
 )
 ;
@@ -8042,20 +7545,18 @@ while
 (
 eq
 (
-vareq
+__mkint(0)
+, // 2
+eq
 (
 digits
 //empty ToS
 ,
 //seems fine
-__mk_elist()
-//empty ToS
-//seems fine
+__mkstr("")
 //empty ToS
 )
-,
 //seems fine
-__mkint(0)
 //empty ToS
 )
 .v.v) {
@@ -8079,7 +7580,7 @@ digits
 //seems fine
 if
 (
-vareq
+eq
 (
 first_token_char
 //empty ToS
@@ -8284,7 +7785,7 @@ __mkint(0)
 //seems fine
 if
 (
-vareq
+eq
 (
 unparsed
 //empty ToS
@@ -8358,7 +7859,7 @@ __mkstr("//not an int")
 //seems fine
 if
 (
-vareq
+eq
 (
 first_token_char
 //empty ToS
@@ -8556,7 +8057,7 @@ __mkstr("//not a string")
 //seems fine
 if
 (
-vareq
+eq
 (
 first_token_char
 //empty ToS
@@ -8724,7 +8225,7 @@ else
 {
 if
 (
-vareq
+eq
 (
 token
 //empty ToS
@@ -9301,7 +8802,7 @@ token_remainder
 //seems fine
 if
 (
-vareq
+eq
 (
 token
 //empty ToS
@@ -9545,32 +9046,13 @@ else
 {
 if
 (
-vareq
+eq
 (
 equals_token
 //empty ToS
 ,
 //seems fine
-concat
-(
-__slist
-(
-__mkint(58)
-//empty ToS
-)
-,
-//seems fine
-__pass
-(
-__mk_elist()
-//empty ToS
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
+__mkstr(":")
 //empty ToS
 )
 .v.v) // if-condition end
@@ -10793,7 +10275,9 @@ while
 (
 eq
 (
-vareq
+__mkint(0)
+, // 2
+eq
 (
 parse_stack
 //empty ToS
@@ -10804,9 +10288,7 @@ __mk_elist()
 //seems fine
 //empty ToS
 )
-,
 //seems fine
-__mkint(0)
 //empty ToS
 )
 .v.v) {
@@ -10843,7 +10325,9 @@ if
 (
 eq
 (
-vareq
+__mkint(0)
+, // 2
+eq
 (
 tos
 //empty ToS
@@ -10854,9 +10338,7 @@ __mk_elist()
 //seems fine
 //empty ToS
 )
-,
 //seems fine
-__mkint(0)
 //empty ToS
 )
 .v.v) // if-condition end
@@ -10911,7 +10393,7 @@ next_tos
 //seems fine
 if
 (
-vareq
+eq
 (
 type
 //empty ToS
@@ -10957,7 +10439,7 @@ else
 {
 if
 (
-vareq
+eq
 (
 type
 //empty ToS
@@ -11055,7 +10537,7 @@ else
 {
 if
 (
-vareq
+eq
 (
 type
 //empty ToS
@@ -11097,7 +10579,7 @@ __mkint(1)
 //seems fine
 if
 (
-vareq
+eq
 (
 fname
 //empty ToS
@@ -11126,7 +10608,7 @@ else
 {
 if
 (
-vareq
+eq
 (
 fname
 //empty ToS
@@ -11155,7 +10637,7 @@ else
 {
 if
 (
-vareq
+eq
 (
 fname
 //empty ToS
@@ -11184,7 +10666,7 @@ else
 {
 if
 (
-vareq
+eq
 (
 fname
 //empty ToS
@@ -11233,7 +10715,7 @@ __mkint(6)
 //seems fine
 if
 (
-vareq
+eq
 (
 fname
 //empty ToS
@@ -11247,7 +10729,7 @@ __mkstr("list")
 {
 if
 (
-vareq
+eq
 (
 ftos
 //empty ToS
@@ -11532,7 +11014,7 @@ __mk_elist()
 //seems fine
 if
 (
-vareq
+eq
 (
 fname
 //empty ToS
@@ -11546,7 +11028,7 @@ __mkstr("concat")
 {
 if
 (
-vareq
+eq
 (
 ftos
 //empty ToS
@@ -11609,7 +11091,7 @@ follow1
 //seems fine
 if
 (
-vareq
+eq
 (
 follow2
 //empty ToS
@@ -11836,7 +11318,9 @@ if
 (
 eq
 (
-vareq
+__mkint(0)
+, // 2
+eq
 (
 fname
 //empty ToS
@@ -11845,9 +11329,7 @@ fname
 __mkstr("then")
 //empty ToS
 )
-,
 //seems fine
-__mkint(0)
 //empty ToS
 )
 .v.v) // if-condition end
@@ -11903,7 +11385,7 @@ __mkint(5)
 //seems fine
 if
 (
-vareq
+eq
 (
 fcode
 //empty ToS
@@ -11928,7 +11410,7 @@ else
 {
 if
 (
-vareq
+eq
 (
 fcode
 //empty ToS
@@ -12132,7 +11614,7 @@ __mkstr("#error AST corrupted")
 //seems fine
 if
 (
-vareq
+eq
 (
 fcall
 //empty ToS
@@ -12146,7 +11628,7 @@ __mkint(0)
 {
 if
 (
-vareq
+eq
 (
 tos
 //empty ToS
@@ -12169,7 +11651,7 @@ __mkstr("//empty ToS")
 //seems fine
 if
 (
-vareq
+eq
 (
 fstack
 //empty ToS
@@ -12226,7 +11708,7 @@ new_fstack
 //seems fine
 if
 (
-vareq
+eq
 (
 fcode
 //empty ToS
@@ -12251,7 +11733,7 @@ else
 {
 if
 (
-vareq
+eq
 (
 fcode
 //empty ToS
@@ -12276,7 +11758,7 @@ else
 {
 if
 (
-vareq
+eq
 (
 fcode
 //empty ToS
@@ -12320,7 +11802,7 @@ __mkstr(")")
 //seems fine
 if
 (
-vareq
+eq
 (
 fstack
 //empty ToS
@@ -12381,7 +11863,7 @@ lower_parse_stack
 //seems fine
 if
 (
-vareq
+eq
 (
 lower_tos
 //empty ToS
@@ -12402,7 +11884,7 @@ else
 {
 if
 (
-vareq
+eq
 (
 lower_fstack_tos
 //empty ToS
@@ -12427,7 +11909,7 @@ else
 {
 if
 (
-vareq
+eq
 (
 lower_fstack_tos
 //empty ToS
@@ -12452,7 +11934,7 @@ else
 {
 if
 (
-vareq
+eq
 (
 lower_fstack_tos
 //empty ToS
@@ -12488,7 +11970,7 @@ else
 {
 if
 (
-vareq
+eq
 (
 lower_fstack_tos
 //empty ToS
@@ -12678,7 +12160,7 @@ else
 {
 if
 (
-vareq
+eq
 (
 fstack
 //empty ToS
@@ -12722,7 +12204,7 @@ fstack
 //seems fine
 if
 (
-vareq
+eq
 (
 lower_fstack_tos
 //empty ToS
