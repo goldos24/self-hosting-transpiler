@@ -190,6 +190,12 @@ while result != list;;;
 				else
 					var next_tos : next_lower = lower_parse_stack;;
 					tos = concat next_tos; list 2 tos;;;;
+					var tos_fname : tos_remainder = tos;;
+					if tos_fname == "elseif" then
+						var lower_tos : lower_lower = next_lower;;
+						tos = concat lower_tos; list 2 tos;;;;
+						next_lower = lower_lower;;
+					endif
 					parse_stack = concat list tos;; next_lower;;;
 				endif
 			;;
@@ -402,13 +408,13 @@ while parse_stack != list;;;
 			; else
 				var fcode : new_fstack = fstack;;
 				fstack = new_fstack;;
-				if fcode == 3; then
+				if fcode == 3 then
 					print ";}";
-				; else if fcode == 4; then
+				elseif fcode == 4 then
 					print "// end-if";
-				; else if fcode == 5; then; else
+				elseif fcode != 5 then
 					print ")";
-				;;;;;;
+				endif
 				if fstack == list;; then
 					print ";";
 				; else
