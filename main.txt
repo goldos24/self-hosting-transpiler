@@ -6,7 +6,7 @@ var current_token = list;;
 while code != "";;
 	var c : new_code = code;;
 	if in_string == 1; then
-		if vareq c; 34; then
+		if c == 34; then
 			in_string = 0;
 			result = concat result; list current_token;;;;
 			result = concat result; list list 34;;;;
@@ -340,7 +340,7 @@ while parse_stack != list;;;
 			;;
 			if fname != "then";; then
 				print fname;;
-				if vareq ftos; list;; then
+				if ftos == list;; then
 					fcode = 5;
 				;;
 			;;

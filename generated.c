@@ -162,10 +162,6 @@ c
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 // an int
 //not an int
 //not a string
@@ -4910,10 +4906,6 @@ next_fcall
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -6171,7 +6163,7 @@ __mkint(1)
 {
 if
 (
-vareq
+eq
 (
 c
 //empty ToS
@@ -11346,7 +11338,7 @@ fname
 //seems fine
 if
 (
-vareq
+eq
 (
 ftos
 //empty ToS
