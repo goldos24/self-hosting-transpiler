@@ -105,6 +105,7 @@ while result != list;;;
 			parse_stack = concat list tos;; lower_parse_stack;;;
 			next_tokens = tokens_after_string;;
 		; else
+			var if_unwind = 0;
 			print "//not a string";
 			if first_token_char == 59; then
 				print "// an end of function call";
@@ -125,7 +126,15 @@ while result != list;;;
 				tos = list "eq" 2 tos;;;
 				var not_function = list "eq" 0 "0";;
 				parse_stack = concat list tos; not_function;; lower_parse_stack;;;
-			; else
+			; elseif token == "then"; then
+				if_unwind = 1;
+			;; elseif token == "else"; then
+				if_unwind = 1;
+			;; elseif token == "elseif"; then
+				if_unwind = 1;
+			;; elseif token == "endif"; then
+				if_unwind = 2;
+			;; else
 				print "// a function call";
 				token = concat list first_token_char;; token_remainder;;;
 				if token == "var"; then
@@ -160,6 +169,30 @@ while result != list;;;
 					parse_stack = concat list list token;;; parse_stack;;;
 				;;
 			;;;;;;;;
+			if if_unwind != 0;; then
+				var continue_unwind = 1;
+				var tos : lower_parse_stack = parse_stack;;
+				while continue_unwind == 1;
+					var tos_fname : tos_remainder = tos;;
+					if tos_fname == "if"; then
+						continue_unwind = 0;
+					; elseif tos_fname == "elseif"; then
+						continue_unwind = 0;
+					;; else
+						print "// unwinding function calls for if statements";
+						var next_tos : next_lower = lower_parse_stack;;
+						tos = concat next_tos; list 2 tos;;;;
+						lower_parse_stack = next_lower;;
+					;;
+				;
+				if if_unwind == 1 then
+					parse_stack = concat list list token;; tos;; lower_parse_stack;;;
+				else
+					var next_tos : next_lower = lower_parse_stack;;
+					tos = concat next_tos; list 2 tos;;;;
+					parse_stack = concat list tos;; next_lower;;;
+				endif
+			;;
 		;;
 	;;
 	result = next_tokens;;	
@@ -351,9 +384,9 @@ while parse_stack != list;;;
 			;;
 			if fcode == 3; then
 				print "{";
-			; else if fcode == 5; then; else
+			; elseif fcode == 5; then; else
 				print "(";
-			;;;;
+			;;;
 			fstack = concat list fcode;; fstack;;;
 			parse_stack = concat list ftos;; list tos;; lower_parse_stack;;;
 			fcall = 1;
