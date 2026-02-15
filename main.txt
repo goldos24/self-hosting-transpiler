@@ -298,20 +298,22 @@ while parse_stack != list;;;
 		tos = next_tos;;
 		if type == 0; then
 			print concat "__mkint(" content; ")";;
-		; else if type == 1; then
+		; elseif type == 1; then
 			print concat "__mkstr(" list 34; content; list 34; ")";;
-		; else if type == 2; then
+		;; elseif type == 2; then
 			var fname : ftos = content;;
 			var fcode = 1;
 			if fname == "if"; then
 				fcode = 2;
-			; else if fname == "then"; then
+			; elseif fname == "elseif"; then
+				fcode = 2;
+			;; elseif fname == "then"; then
 				fcode = 3;
-			; else if fname == "else"; then
+			;; elseif fname == "else"; then
 				fcode = 3;
-			; else if fname == "while"; then
+			;; elseif fname == "while"; then
 				fcode = 6;
-			;;;;;;;;
+			;;;
 			if fname == "list"; then
 				if ftos == list;; then
 					fname = "__mk_elist()";
@@ -338,6 +340,9 @@ while parse_stack != list;;;
 					ftos = list first_type; first_content; 2 next_fcall;;;
 				;;
 			;;
+			if fname == "elseif"; then
+				fname = "else if";
+			;;
 			if fname != "then";; then
 				print fname;;
 				if ftos == list;; then
@@ -352,9 +357,9 @@ while parse_stack != list;;;
 			fstack = concat list fcode;; fstack;;;
 			parse_stack = concat list ftos;; list tos;; lower_parse_stack;;;
 			fcall = 1;
-		; else
+		;; else
 			print "#error AST corrupted";	
-		;;;;;;
+		;;
 	;;
 	if fcall == 0; then
 		if tos == list;; then

@@ -4136,9 +4136,6 @@ content
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
 // an int
 //not an int
 //not a string
@@ -4185,7 +4182,7 @@ content
 // an end of function call
 //not an int
 //not a string
-// a function call
+// an end of function call
 //not an int
 //not a string
 // a function call
@@ -4284,9 +4281,6 @@ fcode
 // a function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
 //not an int
 //not an int
 //not a string
@@ -4308,37 +4302,7 @@ fcode
 // an end of function call
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not an int
-//not a string
 // an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
 //not an int
 //not a string
 // a function call
@@ -4371,10 +4335,55 @@ fcode
 // an end of function call
 //not an int
 //not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
 // an end of function call
 //not an int
 //not a string
 // an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
 //not an int
 //not a string
 // an end of function call
@@ -4882,6 +4891,36 @@ next_fcall
 // an end of function call
 //not an int
 //not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
 // an end of function call
 //not an int
 //not a string
@@ -5097,23 +5136,14 @@ next_fcall
 // an end of function call
 //not an int
 //not a string
+// an end of function call
+//not an int
+//not a string
 // a function call
 //not an int
 //not a string
 // a function call
 //not an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -10427,9 +10457,7 @@ __mkstr(")")
 //empty ToS
 ;}
 //seems fine
-else
-{
-if
+else if
 (
 eq
 (
@@ -10525,9 +10553,10 @@ __mkstr(")")
 //empty ToS
 ;}
 //seems fine
-else
-{
-if
+//empty ToS
+// end-if
+//seems fine
+else if
 (
 eq
 (
@@ -10596,9 +10625,37 @@ __mkint(2)
 //empty ToS
 ;}
 //seems fine
-else
+else if
+(
+eq
+(
+fname
+//empty ToS
+,
+//seems fine
+__mkstr("elseif")
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
 {
-if
+set
+(
+fcode
+//empty ToS
+,
+//seems fine
+__mkint(2)
+//empty ToS
+)
+//seems fine
+//empty ToS
+;}
+//seems fine
+//empty ToS
+// end-if
+//seems fine
+else if
 (
 eq
 (
@@ -10625,9 +10682,10 @@ __mkint(3)
 //empty ToS
 ;}
 //seems fine
-else
-{
-if
+//empty ToS
+// end-if
+//seems fine
+else if
 (
 eq
 (
@@ -10654,9 +10712,10 @@ __mkint(3)
 //empty ToS
 ;}
 //seems fine
-else
-{
-if
+//empty ToS
+// end-if
+//seems fine
+else if
 (
 eq
 (
@@ -10685,21 +10744,6 @@ __mkint(6)
 //seems fine
 //empty ToS
 // end-if
-//seems fine
-//empty ToS
-;}
-//seems fine
-//empty ToS
-// end-if
-//seems fine
-//empty ToS
-;}
-//seems fine
-//empty ToS
-// end-if
-//seems fine
-//empty ToS
-;}
 //seems fine
 //empty ToS
 // end-if
@@ -11310,6 +11354,37 @@ if
 (
 eq
 (
+fname
+//empty ToS
+,
+//seems fine
+__mkstr("elseif")
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+set
+(
+fname
+//empty ToS
+,
+//seems fine
+__mkstr("else if")
+//empty ToS
+)
+//seems fine
+//empty ToS
+;}
+//seems fine
+//empty ToS
+// end-if
+;
+//seems fine
+if
+(
+eq
+(
 __mkint(0)
 , // 2
 eq
@@ -11571,6 +11646,9 @@ __mkint(1)
 //empty ToS
 ;}
 //seems fine
+//empty ToS
+// end-if
+//seems fine
 else
 {
 print
@@ -11578,18 +11656,6 @@ print
 __mkstr("#error AST corrupted")
 //empty ToS
 )
-//seems fine
-//empty ToS
-;}
-//seems fine
-//empty ToS
-// end-if
-//seems fine
-//empty ToS
-;}
-//seems fine
-//empty ToS
-// end-if
 //seems fine
 //empty ToS
 ;}
