@@ -5,72 +5,72 @@ var in_string = 0;
 var current_token = list;;
 while code != "";;
 	var c : new_code = code;;
-	if in_string == 1; then
-		if c == 34; then
+	if in_string == 1 then
+		if c == 34 then
 			in_string = 0;
 			result = concat result; list current_token;;;;
 			result = concat result; list list 34;;;;
 			current_token = list;;
-		; else
+		else
 			current_token = concat current_token; list c;;;;
-		;;
-	; else
+		endif
+	else
 		var whitespace = 0;
-		if c == 32; then
+		if c == 32 then
 			whitespace = 1;
-		;;
-		if c == 10; then
+		endif
+		if c == 10 then
 			whitespace = 1;
-		;;
-		if c == 9; then
+		endif
+		if c == 9 then
 			whitespace = 1;
-		;;
-		if c == 34; then
-			if current_token == ""; then; else
+		endif
+		if c == 34 then
+			if current_token != "" then
 				result = concat result; list current_token;;;;
-			;;
+			endif
 			result = concat result; list list 34;;;;
 			in_string = 1;
 			current_token = "";
-		; else if c == 59; then
-			if current_token == ""; then; else
+		elseif c == 59 then
+			if current_token != "" then
 				result = concat result; list current_token;;;;
-			;;
+			endif
 			result = concat result; list ";";;;
 			current_token = "";
-		; else if c == 61; then
-			if current_token == ""; then; else
+		elseif c == 61 then
+			if current_token != "" then
 				result = concat result; list current_token;;;;
-			;;
+			endif
 			var next_char : remaining_code = new_code;;
-			if next_char == 61; then
+			if next_char == 61 then
 				new_code = remaining_code;;
 				result = concat result; list "==";;;
 				current_token = "";
-			; else
+			else
 				new_code = concat list next_char;; remaining_code;;;
 				result = concat result; list "=";;;
 				current_token = "";
-			;;
-		; else if c == 33; then
+			endif
+		elseif c == 33 then
 			var equals_sign : remaining_code = new_code;;
-			if equals_sign == 61; then
+			if equals_sign == 61 then
 				new_code = remaining_code;;
 				result = concat result; list "!=";;;
 				current_token = "";
-			; else
+			else
 				print "#error not an != sign";
-			;;
-		; else if whitespace == 1; then
-			if current_token == ""; then; else
+			endif
+		elseif whitespace == 1 then
+			if current_token != "" then
 				result = concat result; list current_token;;;;
-			;;
+			endif
 			current_token = list;;
-		; else 
+		else 
 			current_token = concat current_token; list c;;;;
 			"print //normal char";
-		;;;;;;;;;
-	;;
+		endif
+	endif
 	code = new_code;;
 ;
 var parse_stack = list list;;;
@@ -81,63 +81,63 @@ while result != list;;;
 	var digits = "0123456789";
 	while digits != "";;
 		var current_digit : following_digits = digits;;
-		if first_token_char == current_digit;; then
+		if first_token_char == current_digit; then
 			var tos : lower_parse_stack = parse_stack;;
 			token = concat list first_token_char;; token_remainder;;;
 			tos = concat tos; list 0 token;;;;
 			parse_stack = concat list tos;; lower_parse_stack;;;
 			unparsed = 0;
-		;;
-		if unparsed == 1; then
+		endif
+		if unparsed == 1 then
 			digits = following_digits;;
-		; else 
+		else 
 			print "// an int";
 			digits = list;;
-		;;
+		endif
 	;
 	if unparsed; then
 		print "//not an int";
-		if first_token_char == 34; then
+		if first_token_char == 34 then
 			var string_contents : tokens_after_content = next_tokens;;
 			var _ : tokens_after_string = tokens_after_content;;
 			var tos : lower_parse_stack = parse_stack;;
 			tos = concat tos; list 1 string_contents;;;;
 			parse_stack = concat list tos;; lower_parse_stack;;;
 			next_tokens = tokens_after_string;;
-		; else
+		else
 			var if_unwind = 0;
 			print "//not a string";
-			if first_token_char == 59; then
+			if first_token_char == 59 then
 				print "// an end of function call";
 				var tba : new_parse_stack = parse_stack;;
 				var tos : lower_parse_stack = new_parse_stack;;
 				tos = concat tos; list 2 tba;;;;
 				parse_stack = concat list tos;; lower_parse_stack;;;
-			; else if token == "="; then
+			elseif token == "=" then
 				var tos : lower_parse_stack = parse_stack;;
 				tos = list "set" 2 tos;;;
 				parse_stack = concat list tos;; lower_parse_stack;;;
-			; else if token == "=="; then
+			elseif token == "==" then
 				var tos : lower_parse_stack = parse_stack;;
 				tos = list "eq" 2 tos;;;
 				parse_stack = concat list tos;; lower_parse_stack;;;
-			; else if token == "!="; then
+			elseif token == "!=" then
 				var tos : lower_parse_stack = parse_stack;;
 				tos = list "eq" 2 tos;;;
 				var not_function = list "eq" 0 "0";;
 				parse_stack = concat list tos; not_function;; lower_parse_stack;;;
-			; elseif token == "then"; then
+			elseif token == "then" then
 				if_unwind = 1;
-			;; elseif token == "else"; then
+			elseif token == "else" then
 				if_unwind = 1;
-			;; elseif token == "elseif"; then
+			elseif token == "elseif" then
 				if_unwind = 1;
-			;; elseif token == "endif"; then
+			elseif token == "endif" then
 				if_unwind = 2;
-			;; else
+			else
 				print "// a function call";
 				token = concat list first_token_char;; token_remainder;;;
-				if token == "var"; then
+				if token == "var" then
 					print "// var statement detected";
 					var name_token : tokens_after_name = next_tokens;;
 					var equals_token : tokens_after_equals = tokens_after_name;;
@@ -165,11 +165,11 @@ while result != list;;;
 					else
 						print "#error var statement without equals sign";
 					endif
-				; else
+				else
 					parse_stack = concat list list token;;; parse_stack;;;
-				;;
-			;;;;;;;;
-			if if_unwind != 0;; then
+				endif
+			endif
+			if if_unwind != 0 then
 				var continue_unwind = 1;
 				var tos : lower_parse_stack = parse_stack;;
 				while continue_unwind == 1;
@@ -181,13 +181,13 @@ while result != list;;;
 						if if_unwind == 2 then
 							continue_unwind = 1;
 						endif
-					;;;
+					endif
 					if continue_unwind != 0 then
 						print "// unwinding function calls for if statements";
 						var next_tos : next_lower = lower_parse_stack;;
 						tos = concat next_tos; list 2 tos;;;;
 						lower_parse_stack = next_lower;;
-					;;
+					endif
 				;
 				if if_unwind == 1 then
 					parse_stack = concat list list token;; tos;; lower_parse_stack;;;
@@ -202,9 +202,9 @@ while result != list;;;
 					endif
 					parse_stack = concat list tos;; next_lower;;;
 				endif
-			;;
-		;;
-	;;
+			endif
+		endif
+	endif
 	result = next_tokens;;	
 ;
 print "//starting emitter...";
