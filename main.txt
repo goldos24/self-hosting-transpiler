@@ -335,81 +335,81 @@ print "#include <stdlib.h>"
 while parse_stack != list;;;
 	var tos : lower_parse_stack = parse_stack;;
 	var fcall = 0;
-	if tos != list;;; then
+	if tos != list; then
 		var type : further = tos;;
 		var content : next_tos = further;;
 		tos = next_tos;;
-		if type == 0; then
+		if type == 0 then
 			print concat "__mkint(" content; ")";;
-		; elseif type == 1; then
+		elseif type == 1 then
 			print concat "__mkstr(" list 34; content; list 34; ")";;
-		;; elseif type == 2; then
+		elseif type == 2 then
 			var fname : ftos = content;;
 			var fcode = 1;
-			if fname == "if"; then
+			if fname == "if" then
 				fcode = 2;
-			; elseif fname == "elseif"; then
+			elseif fname == "elseif" then
 				fcode = 2;
-			;; elseif fname == "then"; then
+			elseif fname == "then" then
 				fcode = 3;
-			;; elseif fname == "else"; then
+			elseif fname == "else" then
 				fcode = 3;
-			;; elseif fname == "while"; then
+			elseif fname == "while" then
 				fcode = 6;
-			;;;
+			endif
 			if fname == "list"; then
-				if ftos == list;; then
+				if ftos == list; then
 					fname = "__mk_elist()";
-				; else
+				else
 					fname = "concat";
 					var first_type : follow1 = ftos;;
 					var first_content : follow2 = follow1;;
 					var first_param = list "__slist" first_type; first_content;;;
 					var second_param = concat list "list"; follow2;;;
 					ftos = list 2 first_param; 2 second_param;;;
-				;;
-			;;
-			if fname == "concat"; then
-				if ftos == list;; then
+				endif
+			endif
+			if fname == "concat" then
+				if ftos == list; then
 					print "#error 2 arguments required for concat";
-				;;
+				endif
 				var first_type : follow1 = ftos;;
 				var first_content : follow2 = follow1;;
-				if follow2 == list;; then
+				if follow2 == list; then
 					fname = "__pass";
 					ftos = list first_type; first_content;;;
-				; else
+				else
 					var next_fcall = concat list "concat"; follow2;;;
 					ftos = list first_type; first_content; 2 next_fcall;;;
-				;;
-			;;
-			if fname == "elseif"; then
+				endif
+			endif
+			if fname == "elseif" then
 				fname = "else if";
-			;;
-			if fname != "then";; then
+			endif
+			if fname != "then" then
 				print fname;;
-				if ftos == list;; then
+				if ftos == list; then
 					fcode = 5;
-				;;
-			;;
-			if fcode == 3; then
+				endif
+			endif
+			if fcode == 3 then
 				print "{";
-			; elseif fcode == 5; then; else
+			elseif fcode != 5 then
 				print "(";
-			;;;
+			endif
 			fstack = concat list fcode;; fstack;;;
 			parse_stack = concat list ftos;; list tos;; lower_parse_stack;;;
 			fcall = 1;
-		;; else
+		else
 			print "#error AST corrupted";	
-		;;
-	;;
-	if fcall == 0; then
-		if tos == list;; then
+		endif
+	endif
+	if fcall == 0 then
+		if tos == list; then
 			print "//empty ToS";
-			if fstack == list;; then
+			if fstack == list; then
 				print "// Should stop emitting now";
-			; else
+			else
 				var fcode : new_fstack = fstack;;
 				fstack = new_fstack;;
 				if fcode == 3 then
@@ -443,21 +443,21 @@ while parse_stack != list;;;
 				endif
 			endif
 			parse_stack = lower_parse_stack;;
-		; else 
-			if fstack == list;; then
+		else 
+			if fstack == list; then
 				print ";";
-			; else
+			else
 				var lower_fstack_tos : lower_fstack = fstack;;
-				if lower_fstack_tos == 6; then
+				if lower_fstack_tos == 6 then
 					print ".v.v) {";
 					lower_fstack_tos = 3;
-				; else
+				else
 					print ", // 2";
-				;;
+				endif
 				fstack = concat list lower_fstack_tos;; lower_fstack;;;
-			;;
+			endif
 			parse_stack = concat list tos;; lower_parse_stack;;;
-		;;
-	;;
+		endif
+	endif
 ;
 print "}";
