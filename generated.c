@@ -2621,9 +2621,7 @@ equals_token
 //not an int
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
+// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
@@ -2715,12 +2713,7 @@ var_node
 // an end of function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
+// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
@@ -2729,9 +2722,7 @@ var_node
 //not an int
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
+// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
@@ -2810,9 +2801,7 @@ destr_equals_token
 //not an int
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
+// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
@@ -2971,27 +2960,7 @@ semicolon_token
 // an end of function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
+// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
@@ -3001,16 +2970,21 @@ semicolon_token
 // an end of function call
 //not an int
 //not a string
-// an end of function call
+// unwinding function calls for if statements
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
 //not an int
 //not a string
 // an end of function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
+// unwinding function calls for if statements
+// unwinding function calls for if statements
 //not an int
 //not a string
 // an end of function call
@@ -3216,9 +3190,7 @@ tos_fname
 // an end of function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
+// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
@@ -3241,12 +3213,50 @@ tos_fname
 // an end of function call
 //not an int
 //not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
 // an end of function call
 //not an int
 //not a string
 // an end of function call
 //not an int
 //not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
@@ -5919,6 +5929,8 @@ fcode
 //not an int
 //not a string
 // unwinding function calls for if statements
+// unwinding function calls for if statements
+// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
@@ -5947,9 +5959,7 @@ fcode
 // an end of function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
+// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
@@ -6026,14 +6036,8 @@ lower_tos
 // an end of function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
+// unwinding function calls for if statements
+// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
@@ -6045,245 +6049,194 @@ lower_tos
 // an int
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
+// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
 //not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // an end of function call
 //not an int
 //not a string
 // unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+// unwinding function calls for if statements
+// unwinding function calls for if statements
+// unwinding function calls for if statements
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
 //not an int
 //not a string
 // a function call
@@ -9719,9 +9672,7 @@ parse_stack
 //empty ToS
 ;}
 //seems fine
-else
-{
-if
+else if
 (
 eq
 (
@@ -10060,9 +10011,6 @@ __mkstr("#error var statement without equals sign")
 // end-if
 //seems fine
 //empty ToS
-;}
-//seems fine
-//empty ToS
 // end-if
 //seems fine
 //empty ToS
@@ -10294,6 +10242,31 @@ continue_unwind
 __mkint(0)
 //empty ToS
 )
+;
+//seems fine
+if
+(
+eq
+(
+if_unwind
+//empty ToS
+,
+//seems fine
+__mkint(2)
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+set
+(
+continue_unwind
+//empty ToS
+,
+//seems fine
+__mkint(1)
+//empty ToS
+)
 //seems fine
 //empty ToS
 ;}
@@ -10301,7 +10274,36 @@ __mkint(0)
 //empty ToS
 // end-if
 //seems fine
-else
+//empty ToS
+;}
+//seems fine
+//empty ToS
+// end-if
+//seems fine
+//empty ToS
+// end-if
+;
+//seems fine
+if
+(
+eq
+(
+__mkint(0)
+, // 2
+eq
+(
+continue_unwind
+//empty ToS
+,
+//seems fine
+__mkint(0)
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
 {
 print
 (
@@ -13113,6 +13115,10 @@ __mkstr(")")
 //empty ToS
 // end-if
 //seems fine
+//empty ToS
+// end-if
+;
+//seems fine
 if
 (
 eq
@@ -13178,6 +13184,10 @@ if
 (
 eq
 (
+__mkint(0)
+, // 2
+eq
+(
 lower_tos
 //empty ToS
 ,
@@ -13187,13 +13197,11 @@ __mk_elist()
 //seems fine
 //empty ToS
 )
+//seems fine
+//empty ToS
+)
 .v.v) // if-condition end
 //seems fine
-{
-//empty ToS
-;}
-//seems fine
-else
 {
 if
 (
@@ -13218,9 +13226,7 @@ __mkstr(",")
 //empty ToS
 ;}
 //seems fine
-else
-{
-if
+else if
 (
 eq
 (
@@ -13243,9 +13249,7 @@ __mkstr(";")
 //empty ToS
 ;}
 //seems fine
-else
-{
-if
+else if
 (
 eq
 (
@@ -13279,9 +13283,7 @@ __mkint(4)
 //empty ToS
 ;}
 //seems fine
-else
-{
-if
+else if
 (
 eq
 (
@@ -13319,19 +13321,10 @@ __mkint(3)
 // end-if
 //seems fine
 //empty ToS
-;}
-//seems fine
-//empty ToS
 // end-if
 //seems fine
 //empty ToS
-;}
-//seems fine
-//empty ToS
 // end-if
-//seems fine
-//empty ToS
-;}
 //seems fine
 //empty ToS
 // end-if
@@ -13448,10 +13441,11 @@ __mkstr("//seems fine")
 // end-if
 //seems fine
 //empty ToS
-// end-if
+;}
 //seems fine
 //empty ToS
-;}
+// end-if
+;
 //seems fine
 set
 (
@@ -13464,9 +13458,6 @@ lower_parse_stack
 //seems fine
 //empty ToS
 )
-//seems fine
-//empty ToS
-// end-if
 //seems fine
 //empty ToS
 ;}

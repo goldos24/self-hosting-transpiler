@@ -145,26 +145,26 @@ while result != list;;;
 					print name_token;;
 					print equals_token;;
 					print "*/";
-					if equals_token == "="; then
+					if equals_token == "=" then
 						var var_node = list "let";;
 						next_tokens = concat list name_token; ";"; tokens_after_equals;;;
 						parse_stack = concat list var_node;; parse_stack;;;
-					; else if equals_token == ":"; then
+					elseif equals_token == ":" then
 						print "// var destructuring detected";
 						var tail_name_token : tokens_after_tail_name = tokens_after_equals;;
 						var destr_equals_token : tokens_after_destr_equals = tokens_after_tail_name;;
-						if destr_equals_token == "="; then
+						if destr_equals_token == "=" then
 							var var_node = list "let_head_tail";;
 							var semicolon_token = list 59;;
 							next_tokens = concat list tail_name_token; semicolon_token;; tokens_after_destr_equals;;;
 							next_tokens = concat list name_token; semicolon_token;; next_tokens;;;
 							parse_stack = concat list var_node;; parse_stack;;;
-						; else
+						else
 							print "#error var destructuring without equals sign";
-						;;
-					; else
+						endif
+					else
 						print "#error var statement without equals sign";
-					;;;;
+					endif
 				; else
 					parse_stack = concat list list token;;; parse_stack;;;
 				;;
@@ -176,9 +176,13 @@ while result != list;;;
 					var tos_fname : tos_remainder = tos;;
 					if tos_fname == "if"; then
 						continue_unwind = 0;
-					; elseif tos_fname == "elseif"; then
+					elseif tos_fname == "elseif"; then
 						continue_unwind = 0;
-					;; else
+						if if_unwind == 2 then
+							continue_unwind = 1;
+						endif
+					;;;
+					if continue_unwind != 0 then
 						print "// unwinding function calls for if statements";
 						var next_tos : next_lower = lower_parse_stack;;
 						tos = concat next_tos; list 2 tos;;;;
@@ -417,27 +421,27 @@ while parse_stack != list;;;
 				endif
 				if fstack == list;; then
 					print ";";
-				; else
+				else
 					var lower_fstack_tos : lower_fstack = fstack;;
 					var lower_tos : even_lower_parse_stack = lower_parse_stack;;
-					if lower_tos == list;; then; else
-						if lower_fstack_tos == 1; then
+					if lower_tos != list; then
+						if lower_fstack_tos == 1 then
 							print ",";
-						; else if lower_fstack_tos == 3; then
+						elseif lower_fstack_tos == 3 then
 							print ";";
-						; else if lower_fstack_tos == 2; then
+						elseif lower_fstack_tos == 2 then
 							print ".v.v) // if-condition end";
 							lower_fstack_tos = 4;
-						; else if lower_fstack_tos == 6; then
+						elseif lower_fstack_tos == 6 then
 							print ".v.v) {";
 							lower_fstack_tos = 3;
-						;;;;;;;;
-					;;
+						endif
+					endif
 					lower_parse_stack = concat list lower_tos;; even_lower_parse_stack;;;
 					fstack = concat list lower_fstack_tos;; lower_fstack;;;
-				print "//seems fine";
-			;;
-			;;
+					print "//seems fine";
+				endif
+			endif
 			parse_stack = lower_parse_stack;;
 		; else 
 			if fstack == list;; then
