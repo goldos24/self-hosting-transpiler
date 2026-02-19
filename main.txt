@@ -1,6 +1,6 @@
 var code = fload "main.txt";;
 print "//Tokenizing...";
-var result = list;;
+var result = [];
 var in_string = 0;
 var current_token = "";
 while code != "";;
@@ -8,11 +8,11 @@ while code != "";;
 	if in_string == 1 then
 		if c == 34 then
 			in_string = 0;
-			result = concat result; list current_token;;;;
-			result = concat result; list list 34;;;;
-			current_token = list;;
+			result = concat result; [current_token;];;
+			result = concat result; [[34]];;
+			current_token = [];
 		else
-			current_token = concat current_token; list c;;;;
+			current_token = concat current_token; [c;];;
 		endif
 	else
 		var whitespace = 0;
@@ -37,47 +37,47 @@ while code != "";;
 		endif
 		if c == 34 then
 			if current_token != "" then
-				result = concat result; list current_token;;;;
+				result = concat result; [current_token;];;
 			endif
-			result = concat result; list list 34;;;;
+			result = concat result; [[34]];;
 			in_string = 1;
 			current_token = "";
 		elseif single_token_char == 1 then
 			if current_token != "" then
-				result = concat result; list current_token;;;;
+				result = concat result; [current_token;];;
 			endif
-			result = concat result; list list c;;;;;
+			result = concat result; [[c;]];;
 			current_token = "";
 		elseif c == 61 then
 			if current_token != "" then
-				result = concat result; list current_token;;;;
+				result = concat result; [current_token;];;
 			endif
 			var next_char : remaining_code = new_code;;
 			if next_char == 61 then
 				new_code = remaining_code;;
-				result = concat result; list "==";;;
+				result = concat result; ["=="];;
 				current_token = "";
 			else
-				new_code = concat list next_char;; remaining_code;;;
-				result = concat result; list "=";;;
+				new_code = concat [next_char;] remaining_code;;;
+				result = concat result; ["="];;
 				current_token = "";
 			endif
 		elseif c == 33 then
 			var equals_sign : remaining_code = new_code;;
 			if equals_sign == 61 then
 				new_code = remaining_code;;
-				result = concat result; list "!=";;;
+				result = concat result; ["!="];;
 				current_token = "";
 			else
 				print "#error not an != sign";
 			endif
 		elseif whitespace == 1 then
 			if current_token != "" then
-				result = concat result; list current_token;;;;
+				result = concat result; [current_token;];;
 			endif
-			current_token = list;;
+			current_token = [];
 		else 
-			current_token = concat current_token; list c;;;;
+			current_token = concat current_token; [c;];;
 			"print //normal char";
 		endif
 	endif
@@ -93,16 +93,16 @@ while result != [];;
 		var current_digit : following_digits = digits;;
 		if first_token_char == current_digit; then
 			var tos : lower_parse_stack = parse_stack;;
-			token = concat list first_token_char;; token_remainder;;;
-			tos = concat tos; list 0 token;;;;
-			parse_stack = concat list tos;; lower_parse_stack;;;
+			token = concat [first_token_char;] token_remainder;;;
+			tos = concat tos; [0 token;];;
+			parse_stack = concat [tos;] lower_parse_stack;;;
 			unparsed = 0;
 		endif
 		if unparsed == 1 then
 			digits = following_digits;;
 		else 
 			print "// an int";
-			digits = list;;
+			digits = [];
 		endif
 	;
 	if unparsed; then
@@ -111,8 +111,8 @@ while result != [];;
 			var string_contents : tokens_after_content = next_tokens;;
 			var _ : tokens_after_string = tokens_after_content;;
 			var tos : lower_parse_stack = parse_stack;;
-			tos = concat tos; list 1 string_contents;;;;
-			parse_stack = concat list tos;; lower_parse_stack;;;
+			tos = concat tos; [1 string_contents;];;
+			parse_stack = concat [tos;] lower_parse_stack;;;
 			next_tokens = tokens_after_string;;
 		else
 			var if_unwind = 0;
@@ -121,8 +121,8 @@ while result != [];;
 				print "// an end of function call";
 				var tba : new_parse_stack = parse_stack;;
 				var tos : lower_parse_stack = new_parse_stack;;
-				tos = concat tos; list 2 tba;;;;
-				parse_stack = concat list tos;; lower_parse_stack;;;
+				tos = concat tos; [2 tba;];;
+				parse_stack = concat [tos;] lower_parse_stack;;;
 			elseif token == "]" then
 				print "// end of a list";
 				var tba : new_parse_stack = parse_stack;;
@@ -130,24 +130,24 @@ while result != [];;
 				if list_start_token != "[" then
 					print "#error ] without matching [";
 				endif
-				tba = concat list "list"; list_elements;;;
+				tba = concat ["list"] list_elements;;;
 				var tos : lower_parse_stack = new_parse_stack;;
-				tos = concat tos; list 2 tba;;;;
-				parse_stack = concat list tos;; lower_parse_stack;;;
+				tos = concat tos; [2 tba;];;
+				parse_stack = concat [tos;] lower_parse_stack;;;
 			elseif token == "," then
 			elseif token == "=" then
 				var tos : lower_parse_stack = parse_stack;;
-				tos = list "set" 2 tos;;;
-				parse_stack = concat list tos;; lower_parse_stack;;;
+				tos = ["set" 2 tos;];
+				parse_stack = concat [tos;] lower_parse_stack;;;
 			elseif token == "==" then
 				var tos : lower_parse_stack = parse_stack;;
-				tos = list "eq" 2 tos;;;
-				parse_stack = concat list tos;; lower_parse_stack;;;
+				tos = ["eq" 2 tos;];
+				parse_stack = concat [tos;] lower_parse_stack;;;
 			elseif token == "!=" then
 				var tos : lower_parse_stack = parse_stack;;
-				tos = list "eq" 2 tos;;;
-				var not_function = list "eq" 0 "0";;
-				parse_stack = concat list tos; not_function;; lower_parse_stack;;;
+				tos = ["eq" 2 tos;];
+				var not_function = ["eq" 0 "0"];
+				parse_stack = concat [tos; not_function;] lower_parse_stack;;;
 			elseif token == "then" then
 				if_unwind = 1;
 			elseif token == "else" then
@@ -158,7 +158,7 @@ while result != [];;
 				if_unwind = 2;
 			else
 				print "// a function call";
-				token = concat list first_token_char;; token_remainder;;;
+				token = concat [first_token_char;] token_remainder;;;
 				if token == "var" then
 					print "// var statement detected";
 					var name_token : tokens_after_name = next_tokens;;
@@ -168,19 +168,19 @@ while result != [];;
 					print equals_token;;
 					print "*/";
 					if equals_token == "=" then
-						var var_node = list "let";;
-						next_tokens = concat list name_token; ";"; tokens_after_equals;;;
-						parse_stack = concat list var_node;; parse_stack;;;
+						var var_node = ["let"];
+						next_tokens = concat [name_token; ";"] tokens_after_equals;;;
+						parse_stack = concat [var_node;] parse_stack;;;
 					elseif equals_token == ":" then
 						print "// var destructuring detected";
 						var tail_name_token : tokens_after_tail_name = tokens_after_equals;;
 						var destr_equals_token : tokens_after_destr_equals = tokens_after_tail_name;;
 						if destr_equals_token == "=" then
-							var var_node = list "let_head_tail";;
-							var semicolon_token = list 59;;
-							next_tokens = concat list tail_name_token; semicolon_token;; tokens_after_destr_equals;;;
-							next_tokens = concat list name_token; semicolon_token;; next_tokens;;;
-							parse_stack = concat list var_node;; parse_stack;;;
+							var var_node = ["let_head_tail"];
+							var semicolon_token = [59];
+							next_tokens = concat [tail_name_token; semicolon_token;] tokens_after_destr_equals;;;
+							next_tokens = concat [name_token; semicolon_token;] next_tokens;;;
+							parse_stack = concat [var_node;] parse_stack;;;
 						else
 							print "#error var destructuring without equals sign";
 						endif
@@ -188,7 +188,7 @@ while result != [];;
 						print "#error var statement without equals sign";
 					endif
 				else
-					parse_stack = concat list list token;;; parse_stack;;;
+					parse_stack = concat [[token;]] parse_stack;;;
 				endif
 			endif
 			if if_unwind != 0 then
@@ -207,22 +207,22 @@ while result != [];;
 					if continue_unwind != 0 then
 						print "// unwinding function calls for if statements";
 						var next_tos : next_lower = lower_parse_stack;;
-						tos = concat next_tos; list 2 tos;;;;
+						tos = concat next_tos; [2 tos;];;
 						lower_parse_stack = next_lower;;
 					endif
 				;
 				if if_unwind == 1 then
-					parse_stack = concat list list token;; tos;; lower_parse_stack;;;
+					parse_stack = concat [[token;] tos;] lower_parse_stack;;;
 				else
 					var next_tos : next_lower = lower_parse_stack;;
-					tos = concat next_tos; list 2 tos;;;;
+					tos = concat next_tos; [2 tos;];;
 					var tos_fname : tos_remainder = tos;;
 					if tos_fname == "elseif" then
 						var lower_tos : lower_lower = next_lower;;
-						tos = concat lower_tos; list 2 tos;;;;
+						tos = concat lower_tos; [2 tos;];;
 						next_lower = lower_lower;;
 					endif
-					parse_stack = concat list tos;; next_lower;;;
+					parse_stack = concat [tos;] next_lower;;;
 				endif
 			endif
 		endif
@@ -230,7 +230,7 @@ while result != [];;
 	result = next_tokens;;	
 ;
 print "//starting emitter...";
-var fstack = list;;
+var fstack = [];
 print "#include <stdlib.h>"
 ;print "#include <stdio.h>"
 ;print "#include <stdint.h>"
@@ -354,17 +354,17 @@ print "#include <stdlib.h>"
 ;print "#define __pass(x) x"
 ;print "#define let(x, y) struct __pcd_obj x = y"
 ;print "int main() {";
-while parse_stack != list;;;
+while parse_stack != [];;
 	var tos : lower_parse_stack = parse_stack;;
 	var fcall = 0;
-	if tos != list; then
+	if tos != [] then
 		var type : further = tos;;
 		var content : next_tos = further;;
 		tos = next_tos;;
 		if type == 0 then
 			print concat "__mkint(" content; ")";;
 		elseif type == 1 then
-			print concat "__mkstr(" list 34; content; list 34; ")";;
+			print concat "__mkstr(" [34] content; [34] ")";;
 		elseif type == 2 then
 			var fname : ftos = content;;
 			var fcode = 1;
@@ -379,30 +379,30 @@ while parse_stack != list;;;
 			elseif fname == "while" then
 				fcode = 6;
 			endif
-			if fname == "list"; then
-				if ftos == list; then
+			if fname == "list" then
+				if ftos == [] then
 					fname = "__mk_elist()";
 				else
 					fname = "concat";
 					var first_type : follow1 = ftos;;
 					var first_content : follow2 = follow1;;
-					var first_param = list "__slist" first_type; first_content;;;
-					var second_param = concat list "list"; follow2;;;
-					ftos = list 2 first_param; 2 second_param;;;
+					var first_param = ["__slist" first_type; first_content;];
+					var second_param = concat ["list"] follow2;;;
+					ftos = [2 first_param; 2 second_param;];
 				endif
 			endif
 			if fname == "concat" then
-				if ftos == list; then
+				if ftos == [] then
 					print "#error 2 arguments required for concat";
 				endif
 				var first_type : follow1 = ftos;;
 				var first_content : follow2 = follow1;;
-				if follow2 == list; then
+				if follow2 == [] then
 					fname = "__pass";
-					ftos = list first_type; first_content;;;
+					ftos = [first_type; first_content;];
 				else
-					var next_fcall = concat list "concat"; follow2;;;
-					ftos = list first_type; first_content; 2 next_fcall;;;
+					var next_fcall = concat ["concat"] follow2;;;
+					ftos = [first_type; first_content; 2 next_fcall;];
 				endif
 			endif
 			if fname == "elseif" then
@@ -410,7 +410,7 @@ while parse_stack != list;;;
 			endif
 			if fname != "then" then
 				print fname;;
-				if ftos == list; then
+				if ftos == [] then
 					fcode = 5;
 				endif
 			endif
@@ -419,17 +419,17 @@ while parse_stack != list;;;
 			elseif fcode != 5 then
 				print "(";
 			endif
-			fstack = concat list fcode;; fstack;;;
-			parse_stack = concat list ftos;; list tos;; lower_parse_stack;;;
+			fstack = concat [fcode;] fstack;;;
+			parse_stack = concat [ftos;] [tos;] lower_parse_stack;;;
 			fcall = 1;
 		else
 			print "#error AST corrupted";	
 		endif
 	endif
 	if fcall == 0 then
-		if tos == list; then
+		if tos == [] then
 			print "//empty ToS";
-			if fstack == list; then
+			if fstack == [] then
 				print "// Should stop emitting now";
 			else
 				var fcode : new_fstack = fstack;;
@@ -441,12 +441,12 @@ while parse_stack != list;;;
 				elseif fcode != 5 then
 					print ")";
 				endif
-				if fstack == list;; then
+				if fstack == [] then
 					print ";";
 				else
 					var lower_fstack_tos : lower_fstack = fstack;;
 					var lower_tos : even_lower_parse_stack = lower_parse_stack;;
-					if lower_tos != list; then
+					if lower_tos != [] then
 						if lower_fstack_tos == 1 then
 							print ",";
 						elseif lower_fstack_tos == 3 then
@@ -459,14 +459,14 @@ while parse_stack != list;;;
 							lower_fstack_tos = 3;
 						endif
 					endif
-					lower_parse_stack = concat list lower_tos;; even_lower_parse_stack;;;
-					fstack = concat list lower_fstack_tos;; lower_fstack;;;
+					lower_parse_stack = concat [lower_tos;] even_lower_parse_stack;;;
+					fstack = concat [lower_fstack_tos;] lower_fstack;;;
 					print "//seems fine";
 				endif
 			endif
 			parse_stack = lower_parse_stack;;
 		else 
-			if fstack == list; then
+			if fstack == [] then
 				print ";";
 			else
 				var lower_fstack_tos : lower_fstack = fstack;;
@@ -476,9 +476,9 @@ while parse_stack != list;;;
 				else
 					print ", // 2";
 				endif
-				fstack = concat list lower_fstack_tos;; lower_fstack;;;
+				fstack = concat [lower_fstack_tos;] lower_fstack;;;
 			endif
-			parse_stack = concat list tos;; lower_parse_stack;;;
+			parse_stack = concat [tos;] lower_parse_stack;;;
 		endif
 	endif
 ;
