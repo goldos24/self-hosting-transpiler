@@ -2,7 +2,7 @@ var code = fload "main.txt";;
 print "//Tokenizing...";
 var result = list;;
 var in_string = 0;
-var current_token = list;;
+var current_token = "";
 while code != "";;
 	var c : new_code = code;;
 	if in_string == 1 then
@@ -25,6 +25,16 @@ while code != "";;
 		if c == 9 then
 			whitespace = 1;
 		endif
+		var single_token_char = 0;
+		if c == 44 then
+			single_token_char = 1;
+		elseif c == 59 then
+			single_token_char = 1;
+		elseif c == 91 then
+			single_token_char = 1;
+		elseif c == 93 then
+			single_token_char = 1;
+		endif
 		if c == 34 then
 			if current_token != "" then
 				result = concat result; list current_token;;;;
@@ -32,11 +42,11 @@ while code != "";;
 			result = concat result; list list 34;;;;
 			in_string = 1;
 			current_token = "";
-		elseif c == 59 then
+		elseif single_token_char == 1 then
 			if current_token != "" then
 				result = concat result; list current_token;;;;
 			endif
-			result = concat result; list ";";;;
+			result = concat result; list list c;;;;;
 			current_token = "";
 		elseif c == 61 then
 			if current_token != "" then
@@ -73,8 +83,8 @@ while code != "";;
 	endif
 	code = new_code;;
 ;
-var parse_stack = list list;;;
-while result != list;;;
+var parse_stack = [[]];
+while result != [];;
 	var unparsed = 1;
 	var token : next_tokens = result;;
 	var first_token_char : token_remainder = token;;
@@ -113,6 +123,18 @@ while result != list;;;
 				var tos : lower_parse_stack = new_parse_stack;;
 				tos = concat tos; list 2 tba;;;;
 				parse_stack = concat list tos;; lower_parse_stack;;;
+			elseif token == "]" then
+				print "// end of a list";
+				var tba : new_parse_stack = parse_stack;;
+				var list_start_token : list_elements = tba;;
+				if list_start_token != "[" then
+					print "#error ] without matching [";
+				endif
+				tba = concat list "list"; list_elements;;;
+				var tos : lower_parse_stack = new_parse_stack;;
+				tos = concat tos; list 2 tba;;;;
+				parse_stack = concat list tos;; lower_parse_stack;;;
+			elseif token == "," then
 			elseif token == "=" then
 				var tos : lower_parse_stack = parse_stack;;
 				tos = list "set" 2 tos;;;

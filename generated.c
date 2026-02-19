@@ -86,11 +86,6 @@ current_token
 //not a string
 // an end of function call
 //not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -385,6 +380,114 @@ whitespace
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+single_token_char
+=
+*/
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+// unwinding function calls for if statements
+// unwinding function calls for if statements
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
 //not an int
 //not a string
 // a function call
@@ -571,6 +674,17 @@ whitespace
 //not a string
 // a function call
 //not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -1093,10 +1207,10 @@ parse_stack
 // a function call
 //not an int
 //not a string
-// an end of function call
+// end of a list
 //not an int
 //not a string
-// an end of function call
+// end of a list
 //not an int
 //not a string
 // an end of function call
@@ -1113,7 +1227,7 @@ parse_stack
 // a function call
 //not an int
 //not a string
-// an end of function call
+// end of a list
 //not an int
 //not a string
 // an end of function call
@@ -1844,6 +1958,242 @@ tos
 //not an int
 //not a string
 // an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+// var statement detected
+/*
+tba
+:
+*/
+// var destructuring detected
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+// var statement detected
+/*
+list_start_token
+:
+*/
+// var destructuring detected
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+// var statement detected
+/*
+tos
+:
+*/
+// var destructuring detected
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+// an int
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// unwinding function calls for if statements
 //not an int
 //not a string
 // unwinding function calls for if statements
@@ -2828,6 +3178,8 @@ semicolon_token
 // unwinding function calls for if statements
 //not an int
 //not a string
+// unwinding function calls for if statements
+// unwinding function calls for if statements
 // unwinding function calls for if statements
 // unwinding function calls for if statements
 // unwinding function calls for if statements
@@ -6224,9 +6576,7 @@ current_token
 //empty ToS
 ,
 //seems fine
-__mk_elist()
-//empty ToS
-//seems fine
+__mkstr("")
 //empty ToS
 )
 ;
@@ -6592,6 +6942,138 @@ __mkint(1)
 // end-if
 ;
 //seems fine
+let
+(
+single_token_char
+//empty ToS
+,
+//seems fine
+__mkint(0)
+//empty ToS
+)
+;
+//seems fine
+if
+(
+eq
+(
+c
+//empty ToS
+,
+//seems fine
+__mkint(44)
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+set
+(
+single_token_char
+//empty ToS
+,
+//seems fine
+__mkint(1)
+//empty ToS
+)
+//seems fine
+//empty ToS
+;}
+//seems fine
+else if
+(
+eq
+(
+c
+//empty ToS
+,
+//seems fine
+__mkint(59)
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+set
+(
+single_token_char
+//empty ToS
+,
+//seems fine
+__mkint(1)
+//empty ToS
+)
+//seems fine
+//empty ToS
+;}
+//seems fine
+else if
+(
+eq
+(
+c
+//empty ToS
+,
+//seems fine
+__mkint(91)
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+set
+(
+single_token_char
+//empty ToS
+,
+//seems fine
+__mkint(1)
+//empty ToS
+)
+//seems fine
+//empty ToS
+;}
+//seems fine
+else if
+(
+eq
+(
+c
+//empty ToS
+,
+//seems fine
+__mkint(93)
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+set
+(
+single_token_char
+//empty ToS
+,
+//seems fine
+__mkint(1)
+//empty ToS
+)
+//seems fine
+//empty ToS
+;}
+//seems fine
+//empty ToS
+// end-if
+//seems fine
+//empty ToS
+// end-if
+//seems fine
+//empty ToS
+// end-if
+//seems fine
+//empty ToS
+// end-if
+;
+//seems fine
 if
 (
 eq
@@ -6770,11 +7252,11 @@ else if
 (
 eq
 (
-c
+single_token_char
 //empty ToS
 ,
 //seems fine
-__mkint(59)
+__mkint(1)
 //empty ToS
 )
 .v.v) // if-condition end
@@ -6871,7 +7353,28 @@ concat
 (
 __slist
 (
-__mkstr(";")
+concat
+(
+__slist
+(
+c
+//empty ToS
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+__mk_elist()
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
 //empty ToS
 )
 ,
@@ -8340,6 +8843,284 @@ token
 //empty ToS
 ,
 //seems fine
+__mkstr("]")
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+print
+(
+__mkstr("// end of a list")
+//empty ToS
+)
+;
+//seems fine
+let_head_tail
+(
+tba
+//empty ToS
+,
+//seems fine
+new_parse_stack
+//empty ToS
+,
+//seems fine
+parse_stack
+//empty ToS
+//seems fine
+//empty ToS
+)
+;
+//seems fine
+let_head_tail
+(
+list_start_token
+//empty ToS
+,
+//seems fine
+list_elements
+//empty ToS
+,
+//seems fine
+tba
+//empty ToS
+//seems fine
+//empty ToS
+)
+;
+//seems fine
+if
+(
+eq
+(
+__mkint(0)
+, // 2
+eq
+(
+list_start_token
+//empty ToS
+,
+//seems fine
+__mkstr("[")
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+print
+(
+__mkstr("#error ] without matching [")
+//empty ToS
+)
+//seems fine
+//empty ToS
+;}
+//seems fine
+//empty ToS
+// end-if
+;
+//seems fine
+set
+(
+tba
+//empty ToS
+,
+//seems fine
+concat
+(
+concat
+(
+__slist
+(
+__mkstr("list")
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+__mk_elist()
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+list_elements
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+;
+//seems fine
+let_head_tail
+(
+tos
+//empty ToS
+,
+//seems fine
+lower_parse_stack
+//empty ToS
+,
+//seems fine
+new_parse_stack
+//empty ToS
+//seems fine
+//empty ToS
+)
+;
+//seems fine
+set
+(
+tos
+//empty ToS
+,
+//seems fine
+concat
+(
+tos
+//empty ToS
+,
+//seems fine
+__pass
+(
+concat
+(
+__slist
+(
+__mkint(2)
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+concat
+(
+__slist
+(
+tba
+//empty ToS
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+__mk_elist()
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+;
+//seems fine
+set
+(
+parse_stack
+//empty ToS
+,
+//seems fine
+concat
+(
+concat
+(
+__slist
+(
+tos
+//empty ToS
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+__mk_elist()
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+lower_parse_stack
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+;}
+//seems fine
+else if
+(
+eq
+(
+token
+//empty ToS
+,
+//seems fine
+__mkstr(",")
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+//empty ToS
+;}
+//seems fine
+else if
+(
+eq
+(
+token
+//empty ToS
+,
+//seems fine
 __mkstr("=")
 //empty ToS
 )
@@ -9673,6 +10454,12 @@ parse_stack
 //seems fine
 //empty ToS
 ;}
+//seems fine
+//empty ToS
+// end-if
+//seems fine
+//empty ToS
+// end-if
 //seems fine
 //empty ToS
 // end-if
