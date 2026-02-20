@@ -182,16 +182,12 @@ c
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
 //not an int
 //not a string
 // a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // end of a list
@@ -216,7 +212,6 @@ c
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -268,16 +263,12 @@ c
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
 //not an int
 //not a string
 // a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // end of a list
@@ -575,16 +566,12 @@ single_token_char
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
 //not an int
 //not a string
 // a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // end of a list
@@ -612,7 +599,6 @@ single_token_char
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -690,16 +676,12 @@ single_token_char
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
 //not an int
 //not a string
 // a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // end of a list
@@ -727,7 +709,6 @@ single_token_char
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -737,9 +718,6 @@ single_token_char
 //not an int
 //not a string
 // a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // end of a list
@@ -801,16 +779,12 @@ single_token_char
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
 //not an int
 //not a string
 // a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // end of a list
@@ -894,7 +868,6 @@ next_char
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -938,27 +911,18 @@ next_char
 // a function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
 // end of a list
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
 //not an int
 //not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
 //not an int
 //not a string
 // a function call
@@ -969,7 +933,11 @@ next_char
 // a function call
 //not an int
 //not a string
-// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
 //not an int
 //not a string
 // a function call
@@ -1078,7 +1046,6 @@ equals_sign
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -1154,16 +1121,12 @@ equals_sign
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
 //not an int
 //not a string
 // a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // end of a list
@@ -1208,16 +1171,12 @@ equals_sign
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
 //not an int
 //not a string
 // a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // end of a list
@@ -1512,27 +1471,18 @@ tos
 // a function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
 // end of a list
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
 //not an int
 //not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
 //not an int
 //not a string
 // a function call
@@ -1543,17 +1493,20 @@ tos
 // a function call
 //not an int
 //not a string
-// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
 //not an int
 //not a string
 // a function call
 // an int
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // end of a list
@@ -1581,16 +1534,12 @@ tos
 // a function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
 // end of a list
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // an end of function call
@@ -1800,17 +1749,15 @@ tos
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
 // an int
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // end of a list
@@ -1838,16 +1785,12 @@ tos
 // a function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
 // end of a list
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // an end of function call
@@ -2128,17 +2071,15 @@ lower_tos
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
 // an int
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // end of a list
@@ -2279,17 +2220,15 @@ tos
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
 // an int
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // end of a list
@@ -2317,16 +2256,12 @@ tos
 // a function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
 // end of a list
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // an end of function call
@@ -2427,17 +2362,15 @@ tos
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
 // an int
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // end of a list
@@ -2465,16 +2398,12 @@ tos
 // a function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
 // end of a list
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // an end of function call
@@ -2602,10 +2531,9 @@ list_start_token
 // end of a list
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // an end of function call
@@ -2657,17 +2585,15 @@ tos
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
 // an int
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // end of a list
@@ -2695,16 +2621,12 @@ tos
 // a function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
 // end of a list
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // an end of function call
@@ -2786,13 +2708,14 @@ tos
 //not a string
 // a function call
 //not an int
+//not an int
+//not a string
 // an int
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // end of a list
@@ -2817,114 +2740,12 @@ tos
 // a function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
 // end of a list
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
-//not an int
-//not a string
-//not an int
-//not an int
-//not a string
-// unwinding function calls for if statements
-//not an int
-//not a string
-// a function call
-// var statement detected
-/*
-tos
-:
-*/
-// var destructuring detected
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-// an int
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// end of a list
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// end of a list
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -2982,13 +2803,109 @@ tos
 //not a string
 // a function call
 //not an int
+//not an int
+//not a string
 // an int
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// end of a list
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// end of a list
+//not an int
+//not a string
 //not an int
 //not a string
 // a function call
 //not an int
 //not a string
 // an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+// var statement detected
+/*
+tos
+:
+*/
+// var destructuring detected
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
 //not an int
 //not a string
 // end of a list
@@ -3013,7 +2930,11 @@ not_function
 //not a string
 // a function call
 //not an int
+//not an int
+//not a string
 // an int
+//not an int
+//not a string
 //not an int
 //not an int
 //not a string
@@ -3039,46 +2960,20 @@ not_function
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // end of a list
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
 //not an int
 //not a string
-//not an int
-//not an int
-//not a string
-// unwinding function calls for if statements
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an int
+// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -3152,6 +3047,27 @@ not_function
 //not a string
 // a function call
 //not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
 //not an int
 //not a string
 // an end of function call
@@ -3171,18 +3087,14 @@ not_function
 //not an int
 //not a string
 // a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // end of a list
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // an end of function call
@@ -3360,51 +3272,45 @@ var_node
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not an int
 //not a string
 // end of a list
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
 //not an int
 //not a string
 // a function call
 //not an int
 //not a string
 // an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
 //not an int
 //not a string
 // end of a list
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // an end of function call
@@ -3568,41 +3474,14 @@ semicolon_token
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // end of a list
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
 //not an int
 //not a string
 // a function call
@@ -3611,16 +3490,39 @@ semicolon_token
 // an end of function call
 //not an int
 //not a string
+// an end of function call
+//not an int
+//not a string
 // a function call
 //not an int
 //not a string
-// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
 //not an int
 //not a string
 // end of a list
 //not an int
 //not a string
+//not an int
+//not a string
 // a function call
+//not an int
+//not a string
+// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -3629,9 +3531,6 @@ semicolon_token
 // an end of function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
 // a function call
 //not an int
 //not a string
@@ -3646,37 +3545,20 @@ semicolon_token
 //not an int
 //not a string
 // a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // end of a list
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
 //not an int
-//not an int
 //not a string
 // an end of function call
 //not an int
 //not a string
-// unwinding function calls for if statements
+// an end of function call
 //not an int
 //not a string
 // unwinding function calls for if statements
@@ -3690,7 +3572,6 @@ semicolon_token
 //not an int
 //not a string
 // unwinding function calls for if statements
-// unwinding function calls for if statements
 //not an int
 //not a string
 // unwinding function calls for if statements
@@ -3698,24 +3579,35 @@ semicolon_token
 //not a string
 // a function call
 //not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
 //not an int
 //not a string
 // an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+// unwinding function calls for if statements
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
 //not an int
 //not a string
 // end of a list
@@ -3724,10 +3616,9 @@ semicolon_token
 // end of a list
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // an end of function call
@@ -3865,9 +3756,7 @@ tos_fname
 //not an int
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
+// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
@@ -3888,9 +3777,7 @@ tos_fname
 //not an int
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
+// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
@@ -3993,17 +3880,15 @@ next_tos
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
 // an int
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // end of a list
@@ -4066,25 +3951,20 @@ next_tos
 // a function call
 //not an int
 //not a string
-// an end of function call
+// end of a list
 //not an int
 //not a string
-// end of a list
 //not an int
 //not a string
 // a function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
 // end of a list
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // an end of function call
@@ -4139,17 +4019,15 @@ next_tos
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
 // an int
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // end of a list
@@ -4246,17 +4124,15 @@ lower_tos
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
 // an int
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // end of a list
@@ -4301,16 +4177,12 @@ lower_tos
 // a function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
 // end of a list
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // an end of function call
@@ -5420,10 +5292,11 @@ content
 //not an int
 //not an int
 //not a string
+//not an int
+//not a string
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not an int
 //not a string
@@ -5454,17 +5327,6 @@ content
 //not an int
 //not an int
 //not a string
-// a function call
-// an int
-//not an int
-//not a string
-// end of a list
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -5472,6 +5334,22 @@ content
 //not an int
 //not a string
 // end of a list
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+// an int
+//not an int
+//not a string
+// end of a list
+//not an int
+//not a string
 //not an int
 //not an int
 //not a string
@@ -5781,16 +5659,14 @@ first_param
 //not an int
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
 //not an int
 //not a string
-// an end of function call
+//not an int
+//not a string
+// a function call
 //not an int
 //not a string
 // end of a list
@@ -5825,10 +5701,9 @@ second_param
 // end of a list
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // an end of function call
@@ -5846,17 +5721,17 @@ second_param
 // an int
 //not an int
 //not a string
+//not an int
+//not a string
 // a function call
 //not an int
 //not a string
-// an end of function call
 // an int
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // end of a list
@@ -6007,13 +5882,9 @@ first_content
 // a function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // end of a list
@@ -6051,24 +5922,6 @@ next_fcall
 // end of a list
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
 //not an int
 //not a string
 // a function call
@@ -6077,17 +5930,31 @@ next_fcall
 // an end of function call
 //not an int
 //not a string
+// an end of function call
+//not an int
+//not a string
 // a function call
 //not an int
 //not a string
-// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
 // an int
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // end of a list
@@ -6242,62 +6109,53 @@ next_fcall
 // a function call
 //not an int
 //not a string
+// end of a list
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
 // an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
 //not an int
 //not a string
 // end of a list
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
 //not an int
 //not a string
 // a function call
 //not an int
 //not a string
 // a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // end of a list
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
 // a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// end of a list
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -6727,50 +6585,42 @@ lower_tos
 // a function call
 //not an int
 //not a string
+// end of a list
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
 // an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
 //not an int
 //not a string
 // end of a list
 //not an int
 //not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// end of a list
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -6923,16 +6773,12 @@ lower_fstack_tos
 // a function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
 // end of a list
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // an end of function call
@@ -6960,16 +6806,12 @@ lower_fstack_tos
 // a function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
 // end of a list
 //not an int
 //not a string
-// a function call
 //not an int
 //not a string
-// an end of function call
+// a function call
 //not an int
 //not a string
 // an end of function call
