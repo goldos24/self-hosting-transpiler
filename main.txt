@@ -6,6 +6,7 @@ var current_token = "";
 while code != "";;
 	var c : new_code = code;;
 	if in_string == 1 then
+		concat("comment", "character 34 is the quotation mark")
 		if c == 34 then
 			in_string = 0;
 			result = concat(result, [current_token]);
@@ -16,6 +17,7 @@ while code != "";;
 		endif
 	else
 		var whitespace = 0;
+		concat("comment", "for splitting off tokens when a whitespace is found")
 		if c == 32 then
 			whitespace = 1;
 		endif
@@ -26,6 +28,7 @@ while code != "";;
 			whitespace = 1;
 		endif
 		var single_token_char = 0;
+		concat("comment", "split off (),;[] into their own single-character tokens")
 		if c == 40 then
 			single_token_char = 1;
 		elseif c == 41 then
@@ -88,11 +91,16 @@ while code != "";;
 	code = new_code;;
 ;
 var parse_stack = [[]];
+concat("comment", "Most nodes are stored as function call nodes.")
+concat("comment", "They are stored as list starting with the name of the function being called.")
+concat("comment", "Following the name, the arguments are stored in pairs of the node type as integer and the node itself.")
+concat("comment", "0 represents an integer literal, 1 represents a string literal, 2 represents a function call or variable")
 while result != [];;
 	var unparsed = 1;
 	var token : next_tokens = result;;
 	var first_token_char : token_remainder = token;;
 	var digits = "0123456789";
+	concat("comment", "check if the current character is a digit. if so, set unparsed to 0")
 	while digits != "";;
 		var current_digit : following_digits = digits;;
 		if first_token_char == current_digit; then
@@ -109,7 +117,7 @@ while result != [];;
 			digits = [];
 		endif
 	;
-	if unparsed; then
+	if unparsed == 1 then
 		print "//not an int";
 		if first_token_char == 34 then
 			var string_contents : tokens_after_content = next_tokens;;
