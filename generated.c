@@ -1899,6 +1899,295 @@ if_unwind
 //not an int
 //not a string
 // a function call
+// var statement detected
+/*
+variable_terminator
+=
+*/
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+// unwinding function calls for if statements
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+// var statement detected
+/*
+tos
+:
+*/
+// var destructuring detected
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+// var statement detected
+/*
+tos_start
+:
+*/
+// var destructuring detected
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// end of a list
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+// var statement detected
+/*
+lower_tos
+:
+*/
+// var destructuring detected
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+// an int
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// end of a list
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// end of a list
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+// unwinding function calls for if statements
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
 //not an int
 //not a string
 // a function call
@@ -9027,6 +9316,330 @@ print
 __mkstr("//not a string")
 //empty ToS
 )
+;
+//seems fine
+let
+(
+variable_terminator
+//empty ToS
+,
+//seems fine
+__mkint(0)
+//empty ToS
+)
+;
+//seems fine
+if
+(
+eq
+(
+token
+//empty ToS
+,
+//seems fine
+__mkstr(",")
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+set
+(
+variable_terminator
+//empty ToS
+,
+//seems fine
+__mkint(1)
+//empty ToS
+)
+//seems fine
+//empty ToS
+;}
+//seems fine
+else if
+(
+eq
+(
+token
+//empty ToS
+,
+//seems fine
+__mkstr(")")
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+set
+(
+variable_terminator
+//empty ToS
+,
+//seems fine
+__mkint(1)
+//empty ToS
+)
+//seems fine
+//empty ToS
+;}
+//seems fine
+else if
+(
+eq
+(
+token
+//empty ToS
+,
+//seems fine
+__mkstr("]")
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+set
+(
+variable_terminator
+//empty ToS
+,
+//seems fine
+__mkint(1)
+//empty ToS
+)
+//seems fine
+//empty ToS
+;}
+//seems fine
+//empty ToS
+// end-if
+//seems fine
+//empty ToS
+// end-if
+//seems fine
+//empty ToS
+// end-if
+;
+//seems fine
+if
+(
+eq
+(
+variable_terminator
+//empty ToS
+,
+//seems fine
+__mkint(1)
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+let_head_tail
+(
+tos
+//empty ToS
+,
+//seems fine
+lower_stack
+//empty ToS
+,
+//seems fine
+parse_stack
+//empty ToS
+//seems fine
+//empty ToS
+)
+;
+//seems fine
+let_head_tail
+(
+tos_start
+//empty ToS
+,
+//seems fine
+tos_remainder
+//empty ToS
+,
+//seems fine
+tos
+//empty ToS
+//seems fine
+//empty ToS
+)
+;
+//seems fine
+if
+(
+eq
+(
+tos_start
+//empty ToS
+,
+//seems fine
+__mkstr("[")
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+//empty ToS
+;}
+//seems fine
+else if
+(
+eq
+(
+tos_remainder
+//empty ToS
+,
+//seems fine
+__mk_elist()
+//empty ToS
+//seems fine
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+let_head_tail
+(
+lower_tos
+//empty ToS
+,
+//seems fine
+new_lower_parse_stack
+//empty ToS
+,
+//seems fine
+lower_stack
+//empty ToS
+//seems fine
+//empty ToS
+)
+;
+//seems fine
+set
+(
+lower_tos
+//empty ToS
+,
+//seems fine
+concat
+(
+lower_tos
+//empty ToS
+,
+//seems fine
+__pass
+(
+concat
+(
+__slist
+(
+__mkint(2)
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+concat
+(
+__slist
+(
+tos
+//empty ToS
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+__mk_elist()
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+;
+//seems fine
+set
+(
+parse_stack
+//empty ToS
+,
+//seems fine
+concat
+(
+concat
+(
+__slist
+(
+lower_tos
+//empty ToS
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+__mk_elist()
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+,
+//seems fine
+__pass
+(
+new_lower_parse_stack
+//empty ToS
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+//seems fine
+//empty ToS
+;}
+//seems fine
+//empty ToS
+// end-if
+//seems fine
+//empty ToS
+// end-if
+//seems fine
+//empty ToS
+;}
+//seems fine
+//empty ToS
+// end-if
 ;
 //seems fine
 if

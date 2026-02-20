@@ -121,6 +121,24 @@ while result != [];;
 		else
 			var if_unwind = 0;
 			print "//not a string";
+			var variable_terminator = 0;
+			if token == "," then
+				variable_terminator = 1;
+			elseif token == ")" then
+				variable_terminator = 1;
+			elseif token == "]" then
+				variable_terminator = 1;
+			endif
+			if variable_terminator == 1 then
+				var tos : lower_stack = parse_stack;;
+				var tos_start : tos_remainder = tos;;
+				if tos_start == "[" then
+				elseif tos_remainder == [] then
+					var lower_tos : new_lower_parse_stack = lower_stack;;
+					lower_tos = concat(lower_tos; [2 tos;]);
+					parse_stack = concat([lower_tos], new_lower_parse_stack);
+				endif
+			endif
 			if first_token_char == 59 then
 				print "// an end of function call";
 				var tba : new_parse_stack = parse_stack;;
