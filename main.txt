@@ -26,7 +26,11 @@ while code != "";;
 			whitespace = 1;
 		endif
 		var single_token_char = 0;
-		if c == 44 then
+		if c == 40 then
+			single_token_char = 1;
+		elseif c == 41 then
+			single_token_char = 1;
+		elseif c == 44 then
 			single_token_char = 1;
 		elseif c == 59 then
 			single_token_char = 1;
@@ -112,12 +116,18 @@ while result != [];;
 			var _ : tokens_after_string = tokens_after_content;;
 			var tos : lower_parse_stack = parse_stack;;
 			tos = concat tos; [1 string_contents;];;
-			parse_stack = concat [tos;] lower_parse_stack;;;
+			parse_stack = concat([tos;] lower_parse_stack;);
 			next_tokens = tokens_after_string;;
 		else
 			var if_unwind = 0;
 			print "//not a string";
 			if first_token_char == 59 then
+				print "// an end of function call";
+				var tba : new_parse_stack = parse_stack;;
+				var tos : lower_parse_stack = new_parse_stack;;
+				tos = concat tos; [2 tba;];;
+				parse_stack = concat [tos;] lower_parse_stack;;;
+			elseif token == ")" then
 				print "// an end of function call";
 				var tba : new_parse_stack = parse_stack;;
 				var tos : lower_parse_stack = new_parse_stack;;
@@ -135,6 +145,7 @@ while result != [];;
 				tos = concat tos; [2 tba;];;
 				parse_stack = concat [tos;] lower_parse_stack;;;
 			elseif token == "," then
+			elseif token == "(" then
 			elseif token == "=" then
 				var tos : lower_parse_stack = parse_stack;;
 				tos = ["set" 2 tos;];
