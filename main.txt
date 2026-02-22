@@ -89,7 +89,7 @@ while code != "";
 		endif
 	endif
 	code = new_code;;
-;
+endwhile
 var parse_stack = [[]];
 concat("comment", "Most nodes are stored as function call nodes.")
 concat("comment", "They are stored as list starting with the name of the function being called.")
@@ -116,7 +116,7 @@ while result != [];
 			print "// an int";
 			digits = [];
 		endif
-	;
+	endwhile
 	if unparsed == 1 then
 		print "//not an int";
 		if first_token_char == 34 then
@@ -250,7 +250,7 @@ while result != [];
 						tos = concat(next_tos, [2, tos]);
 						lower_parse_stack = next_lower;;
 					endif
-				;
+				endwhile
 				if if_unwind == 1 then
 					parse_stack = concat([[token], tos], lower_parse_stack);
 				else
@@ -268,7 +268,7 @@ while result != [];
 		endif
 	endif
 	result = next_tokens;;	
-;
+endwhile
 print "//starting emitter...";
 var fstack = [];
 print "#include <stdlib.h>"
@@ -528,5 +528,5 @@ while parse_stack != [];
 			parse_stack = concat([tos], lower_parse_stack);
 		endif
 	endif
-;
+endwhile
 print "}";

@@ -15,9 +15,9 @@ while to_be_printed != [];;
     var next_message : remaining_messages = to_be_printed;;
     to_be_printed = remaining_messages;;
     print(next_message)
-;
+endwhile
 ```
-A `while` loop itself can be terminated using a single semicolon.
+A `while` loop itself can be terminated using `endwhile`.
 The condition of an `if` clause is terminated by the keyword `then`, no matter how many semicolons it would otherwise need:
 ```
 if a != b then
@@ -69,13 +69,13 @@ Values can be compared for equality using `==`:
 ```
 while a == 42;
     ...
-;
+endwhile
 ```
 or inequality:
 ```
 while a != 42;
     ...
-;
+endwhile
 ```
 Both operators have to be terminated by a semicolon.
 ## Workarounds for missing features

@@ -1244,7 +1244,6 @@ equals_sign
 // an end of function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -1696,7 +1695,6 @@ tos
 // unwinding function calls for if statements
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -4007,7 +4005,6 @@ next_tos
 // unwinding function calls for if statements
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -4307,7 +4304,6 @@ lower_tos
 // an end of function call
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
@@ -6979,7 +6975,6 @@ lower_fstack_tos
 // unwinding function calls for if statements
 //not an int
 //not a string
-// an end of function call
 //not an int
 //not a string
 // a function call
