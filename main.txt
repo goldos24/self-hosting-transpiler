@@ -3,7 +3,7 @@ print "//Tokenizing...";
 var result = [];
 var in_string = 0;
 var current_token = "";
-while code != "";;
+while code != "";
 	var c : new_code = code;;
 	if in_string == 1 then
 		concat("comment", "character 34 is the quotation mark")
@@ -95,13 +95,13 @@ concat("comment", "Most nodes are stored as function call nodes.")
 concat("comment", "They are stored as list starting with the name of the function being called.")
 concat("comment", "Following the name, the arguments are stored in pairs of the node type as integer and the node itself.")
 concat("comment", "0 represents an integer literal, 1 represents a string literal, 2 represents a function call or variable")
-while result != [];;
+while result != [];
 	var unparsed = 1;
 	var token : next_tokens = result;;
 	var first_token_char : token_remainder = token;;
 	var digits = "0123456789";
 	concat("comment", "check if the current character is a digit. if so, set unparsed to 0")
-	while digits != "";;
+	while digits != "";
 		var current_digit : following_digits = digits;;
 		if first_token_char == current_digit; then
 			var tos : lower_parse_stack = parse_stack;;
@@ -182,15 +182,16 @@ while result != [];;
 				parse_stack = concat([tos], lower_parse_stack);
 			elseif token == "!=" then
 				var tos : lower_parse_stack = parse_stack;;
-				tos = ["eq", 2, tos];
-				var not_function = ["eq", 0, "0"];
-				parse_stack = concat([tos, not_function], lower_parse_stack);
+				tos = ["neq", 2, tos];
+				parse_stack = concat([tos], lower_parse_stack);
 			elseif token == "then" then
 				if_unwind = 1;
 			elseif token == "else" then
 				if_unwind = 1;
 			elseif token == "elseif" then
 				if_unwind = 1;
+			elseif token == "endwhile" then
+				if_unwind = 2;
 			elseif token == "endif" then
 				if_unwind = 2;
 			else
@@ -240,6 +241,8 @@ while result != [];;
 						if if_unwind == 2 then
 							continue_unwind = 1;
 						endif
+					elseif tos_fname == "while" then
+						continue_unwind = 0;
 					endif
 					if continue_unwind != 0 then
 						print "// unwinding function calls for if statements";
@@ -391,7 +394,7 @@ print "#include <stdlib.h>"
 ;print "#define __pass(x) x"
 ;print "#define let(x, y) struct __pcd_obj x = y"
 ;print "int main() {";
-while parse_stack != [];;
+while parse_stack != [];
 	var tos : lower_parse_stack = parse_stack;;
 	var fcall = 0;
 	if tos != [] then
@@ -415,6 +418,9 @@ while parse_stack != [];;
 				fcode = 3;
 			elseif fname == "while" then
 				fcode = 6;
+			elseif fname == "neq" then
+				fcode = 7;
+				fname = "eq(eq";
 			endif
 			if fname == "list" then
 				if ftos == [] then
@@ -475,6 +481,8 @@ while parse_stack != [];;
 					print ";}";
 				elseif fcode == 4 then
 					print "// end-if";
+				elseif fcode == 7 then
+					print "), __mkint(0))";
 				elseif fcode != 5 then
 					print ")";
 				endif
@@ -494,6 +502,8 @@ while parse_stack != [];;
 						elseif lower_fstack_tos == 6 then
 							print ".v.v) {";
 							lower_fstack_tos = 3;
+						elseif lower_fstack_tos == 7 then
+							print ",";
 						endif
 					endif
 					lower_parse_stack = concat([lower_tos], even_lower_parse_stack);

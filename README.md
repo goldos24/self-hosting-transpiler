@@ -73,11 +73,11 @@ while a == 42;
 ```
 or inequality:
 ```
-while a != 42;;
+while a != 42;
     ...
 ;
 ```
-The equality operator only needs a single semicolon to be terminated properly, the inequality operator needs two.
+Both operators have to be terminated by a semicolon.
 ## Workarounds for missing features
 The most commonly needed features are AND and OR operations.
 You can easily emulate AND by nesting if statements:

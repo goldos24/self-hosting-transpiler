@@ -103,9 +103,6 @@ current_token
 // an end of function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
 // a function call
 // var statement detected
 /*
@@ -146,6 +143,18 @@ c
 //not an int
 //not a string
 // unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// an end of function call
 //not an int
 //not a string
 // a function call
@@ -307,6 +316,18 @@ whitespace
 // a function call
 //not an int
 //not a string
+//not an int
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
 // a function call
 //not an int
 //not a string
@@ -397,6 +418,18 @@ single_token_char
 // a function call
 //not an int
 //not a string
+//not an int
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
 // a function call
 //not an int
 //not a string
@@ -549,7 +582,6 @@ single_token_char
 //not an int
 //not an int
 //not a string
-// unwinding function calls for if statements
 // unwinding function calls for if statements
 //not an int
 //not a string
@@ -660,7 +692,6 @@ single_token_char
 //not an int
 //not a string
 // unwinding function calls for if statements
-// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
@@ -762,7 +793,6 @@ single_token_char
 //not an int
 //not an int
 //not a string
-// unwinding function calls for if statements
 // unwinding function calls for if statements
 //not an int
 //not a string
@@ -1105,7 +1135,6 @@ equals_sign
 //not an int
 //not a string
 // unwinding function calls for if statements
-// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
@@ -1250,6 +1279,54 @@ parse_stack
 // a function call
 //not an int
 //not a string
+//not an int
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
 // a function call
 //not an int
 //not a string
@@ -1259,9 +1336,6 @@ parse_stack
 //not an int
 //not a string
 // end of a list
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -1366,13 +1440,22 @@ digits
 // a function call
 //not an int
 //not a string
-// a function call
+//not an int
 //not an int
 //not a string
 //not an int
 //not an int
 //not a string
 // an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
 //not an int
 //not a string
 // an end of function call
@@ -1622,9 +1705,10 @@ tos
 // a function call
 //not an int
 //not a string
-// an end of function call
+// an int
 //not an int
 //not a string
+// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
@@ -2501,7 +2585,6 @@ list_start_token
 //not an int
 //not a string
 // unwinding function calls for if statements
-// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
@@ -2915,11 +2998,24 @@ tos
 //not an int
 //not a string
 // a function call
-// var statement detected
-/*
-not_function
-=
-*/
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// end of a list
+//not an int
+//not a string
 //not an int
 //not a string
 // a function call
@@ -2928,52 +3024,25 @@ not_function
 // an end of function call
 //not an int
 //not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
 // a function call
 //not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
 //not an int
 //not a string
 // an int
-//not an int
-//not a string
-//not an int
-//not an int
-//not a string
-// end of a list
-//not an int
-//not a string
-// an end of function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// end of a list
-//not an int
-//not a string
-//not an int
-//not a string
-// a function call
-//not an int
-//not a string
-// an end of function call
 //not an int
 //not a string
 // an end of function call
@@ -3642,6 +3711,7 @@ semicolon_token
 // unwinding function calls for if statements
 // unwinding function calls for if statements
 // unwinding function calls for if statements
+// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
@@ -3653,7 +3723,6 @@ semicolon_token
 // an int
 //not an int
 //not a string
-// unwinding function calls for if statements
 // unwinding function calls for if statements
 //not an int
 //not a string
@@ -3814,6 +3883,28 @@ tos_fname
 //not an int
 //not a string
 // unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+// unwinding function calls for if statements
 // unwinding function calls for if statements
 //not an int
 //not a string
@@ -3826,7 +3917,6 @@ tos_fname
 // an int
 //not an int
 //not a string
-// unwinding function calls for if statements
 // unwinding function calls for if statements
 //not an int
 //not a string
@@ -5128,9 +5218,6 @@ fstack
 // an end of function call
 //not an int
 //not a string
-// an end of function call
-//not an int
-//not a string
 // a function call
 // var statement detected
 /*
@@ -5193,7 +5280,6 @@ fcall
 // end of a list
 //not an int
 //not a string
-// unwinding function calls for if statements
 // unwinding function calls for if statements
 //not an int
 //not a string
@@ -5524,6 +5610,37 @@ fcode
 // an end of function call
 //not an int
 //not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
 // unwinding function calls for if statements
 // unwinding function calls for if statements
 // unwinding function calls for if statements
@@ -6003,7 +6120,6 @@ next_fcall
 //not an int
 //not a string
 // unwinding function calls for if statements
-// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
@@ -6078,7 +6194,6 @@ next_fcall
 // an int
 //not an int
 //not a string
-// unwinding function calls for if statements
 // unwinding function calls for if statements
 //not an int
 //not a string
@@ -6346,6 +6461,24 @@ fcode
 //not an int
 //not a string
 // unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
 // unwinding function calls for if statements
 //not an int
 //not a string
@@ -6356,6 +6489,7 @@ fcode
 // an end of function call
 //not an int
 //not a string
+// unwinding function calls for if statements
 // unwinding function calls for if statements
 // unwinding function calls for if statements
 // unwinding function calls for if statements
@@ -6463,7 +6597,6 @@ lower_tos
 //not an int
 //not a string
 // unwinding function calls for if statements
-// unwinding function calls for if statements
 //not an int
 //not a string
 // a function call
@@ -6560,6 +6693,26 @@ lower_tos
 // an end of function call
 //not an int
 //not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not a string
+// an int
+//not an int
+//not a string
+// unwinding function calls for if statements
+//not an int
+//not a string
+// a function call
+//not an int
+//not an int
+//not a string
+// an end of function call
+//not an int
+//not a string
+// unwinding function calls for if statements
 // unwinding function calls for if statements
 // unwinding function calls for if statements
 // unwinding function calls for if statements
@@ -7013,11 +7166,7 @@ __mkstr("")
 ;
 while
 (
-eq
-(
-__mkint(0)
-, // 2
-eq
+eq(eq
 (
 code
 //empty ToS
@@ -7025,10 +7174,7 @@ code
 //seems fine
 __mkstr("")
 //empty ToS
-)
-//seems fine
-//empty ToS
-)
+), __mkint(0))
 .v.v) {
 //seems fine
 let_head_tail
@@ -7062,6 +7208,20 @@ __mkint(1)
 .v.v) // if-condition end
 //seems fine
 {
+concat
+(
+__mkstr("comment")
+, // 2
+__pass
+(
+__mkstr("character 34 is the quotation mark")
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+;
+//seems fine
 if
 (
 eq
@@ -7276,6 +7436,20 @@ whitespace
 ,
 //seems fine
 __mkint(0)
+//empty ToS
+)
+;
+//seems fine
+concat
+(
+__mkstr("comment")
+, // 2
+__pass
+(
+__mkstr("for splitting off tokens when a whitespace is found")
+//empty ToS
+)
+//seems fine
 //empty ToS
 )
 ;
@@ -7380,6 +7554,20 @@ single_token_char
 ,
 //seems fine
 __mkint(0)
+//empty ToS
+)
+;
+//seems fine
+concat
+(
+__mkstr("comment")
+, // 2
+__pass
+(
+__mkstr("split off (),;[] into their own single-character tokens")
+//empty ToS
+)
+//seems fine
 //empty ToS
 )
 ;
@@ -7581,11 +7769,7 @@ __mkint(34)
 {
 if
 (
-eq
-(
-__mkint(0)
-, // 2
-eq
+eq(eq
 (
 current_token
 //empty ToS
@@ -7593,10 +7777,7 @@ current_token
 //seems fine
 __mkstr("")
 //empty ToS
-)
-//seems fine
-//empty ToS
-)
+), __mkint(0))
 .v.v) // if-condition end
 //seems fine
 {
@@ -7755,11 +7936,7 @@ __mkint(1)
 {
 if
 (
-eq
-(
-__mkint(0)
-, // 2
-eq
+eq(eq
 (
 current_token
 //empty ToS
@@ -7767,10 +7944,7 @@ current_token
 //seems fine
 __mkstr("")
 //empty ToS
-)
-//seems fine
-//empty ToS
-)
+), __mkint(0))
 .v.v) // if-condition end
 //seems fine
 {
@@ -7920,11 +8094,7 @@ __mkint(61)
 {
 if
 (
-eq
-(
-__mkint(0)
-, // 2
-eq
+eq(eq
 (
 current_token
 //empty ToS
@@ -7932,10 +8102,7 @@ current_token
 //seems fine
 __mkstr("")
 //empty ToS
-)
-//seems fine
-//empty ToS
-)
+), __mkint(0))
 .v.v) // if-condition end
 //seems fine
 {
@@ -8351,11 +8518,7 @@ __mkint(1)
 {
 if
 (
-eq
-(
-__mkint(0)
-, // 2
-eq
+eq(eq
 (
 current_token
 //empty ToS
@@ -8363,10 +8526,7 @@ current_token
 //seems fine
 __mkstr("")
 //empty ToS
-)
-//seems fine
-//empty ToS
-)
+), __mkint(0))
 .v.v) // if-condition end
 //seems fine
 {
@@ -8557,13 +8717,61 @@ __mk_elist()
 //empty ToS
 )
 ;
+concat
+(
+__mkstr("comment")
+, // 2
+__pass
+(
+__mkstr("Most nodes are stored as function call nodes.")
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+;
+concat
+(
+__mkstr("comment")
+, // 2
+__pass
+(
+__mkstr("They are stored as list starting with the name of the function being called.")
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+;
+concat
+(
+__mkstr("comment")
+, // 2
+__pass
+(
+__mkstr("Following the name, the arguments are stored in pairs of the node type as integer and the node itself.")
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+;
+concat
+(
+__mkstr("comment")
+, // 2
+__pass
+(
+__mkstr("0 represents an integer literal, 1 represents a string literal, 2 represents a function call or variable")
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+;
 while
 (
-eq
-(
-__mkint(0)
-, // 2
-eq
+eq(eq
 (
 result
 //empty ToS
@@ -8573,10 +8781,7 @@ __mk_elist()
 //empty ToS
 //seems fine
 //empty ToS
-)
-//seems fine
-//empty ToS
-)
+), __mkint(0))
 .v.v) {
 //seems fine
 let
@@ -8635,13 +8840,23 @@ __mkstr("0123456789")
 )
 ;
 //seems fine
+concat
+(
+__mkstr("comment")
+, // 2
+__pass
+(
+__mkstr("check if the current character is a digit. if so, set unparsed to 0")
+//empty ToS
+)
+//seems fine
+//empty ToS
+)
+;
+//seems fine
 while
 (
-eq
-(
-__mkint(0)
-, // 2
-eq
+eq(eq
 (
 digits
 //empty ToS
@@ -8649,10 +8864,7 @@ digits
 //seems fine
 __mkstr("")
 //empty ToS
-)
-//seems fine
-//empty ToS
-)
+), __mkint(0))
 .v.v) {
 //seems fine
 let_head_tail
@@ -8939,8 +9151,15 @@ __mk_elist()
 //seems fine
 if
 (
+eq
+(
 unparsed
 //empty ToS
+,
+//seems fine
+__mkint(1)
+//empty ToS
+)
 .v.v) // if-condition end
 //seems fine
 {
@@ -9873,11 +10092,7 @@ tba
 //seems fine
 if
 (
-eq
-(
-__mkint(0)
-, // 2
-eq
+eq(eq
 (
 list_start_token
 //empty ToS
@@ -9885,10 +10100,7 @@ list_start_token
 //seems fine
 __mkstr("[")
 //empty ToS
-)
-//seems fine
-//empty ToS
-)
+), __mkint(0))
 .v.v) // if-condition end
 //seems fine
 {
@@ -10442,7 +10654,7 @@ concat
 (
 __slist
 (
-__mkstr("eq")
+__mkstr("neq")
 //empty ToS
 )
 ,
@@ -10498,70 +10710,6 @@ __mk_elist()
 )
 ;
 //seems fine
-let
-(
-not_function
-//empty ToS
-,
-//seems fine
-concat
-(
-__slist
-(
-__mkstr("eq")
-//empty ToS
-)
-,
-//seems fine
-__pass
-(
-concat
-(
-__slist
-(
-__mkint(0)
-//empty ToS
-)
-,
-//seems fine
-__pass
-(
-concat
-(
-__slist
-(
-__mkstr("0")
-//empty ToS
-)
-,
-//seems fine
-__pass
-(
-__mk_elist()
-//empty ToS
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
-;
-//seems fine
 set
 (
 parse_stack
@@ -10583,27 +10731,8 @@ tos
 //seems fine
 __pass
 (
-concat
-(
-__slist
-(
-not_function
-//empty ToS
-//seems fine
-//empty ToS
-)
-,
-//seems fine
-__pass
-(
 __mk_elist()
 //empty ToS
-//seems fine
-//empty ToS
-)
-//seems fine
-//empty ToS
-)
 //seems fine
 //empty ToS
 )
@@ -10704,6 +10833,33 @@ if_unwind
 ,
 //seems fine
 __mkint(1)
+//empty ToS
+)
+//seems fine
+//empty ToS
+;}
+//seems fine
+else if
+(
+eq
+(
+token
+//empty ToS
+,
+//seems fine
+__mkstr("endwhile")
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+set
+(
+if_unwind
+//empty ToS
+,
+//seems fine
+__mkint(2)
 //empty ToS
 )
 //seems fine
@@ -11488,15 +11644,14 @@ parse_stack
 //seems fine
 //empty ToS
 // end-if
+//seems fine
+//empty ToS
+// end-if
 ;
 //seems fine
 if
 (
-eq
-(
-__mkint(0)
-, // 2
-eq
+eq(eq
 (
 if_unwind
 //empty ToS
@@ -11504,10 +11659,7 @@ if_unwind
 //seems fine
 __mkint(0)
 //empty ToS
-)
-//seems fine
-//empty ToS
-)
+), __mkint(0))
 .v.v) // if-condition end
 //seems fine
 {
@@ -11654,20 +11806,21 @@ __mkint(1)
 //empty ToS
 ;}
 //seems fine
-//empty ToS
-// end-if
-//seems fine
-//empty ToS
-// end-if
-;
-//seems fine
-if
+else if
 (
 eq
 (
-__mkint(0)
-, // 2
-eq
+tos_fname
+//empty ToS
+,
+//seems fine
+__mkstr("while")
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+set
 (
 continue_unwind
 //empty ToS
@@ -11678,7 +11831,29 @@ __mkint(0)
 )
 //seems fine
 //empty ToS
-)
+;}
+//seems fine
+//empty ToS
+// end-if
+//seems fine
+//empty ToS
+// end-if
+//seems fine
+//empty ToS
+// end-if
+;
+//seems fine
+if
+(
+eq(eq
+(
+continue_unwind
+//empty ToS
+,
+//seems fine
+__mkint(0)
+//empty ToS
+), __mkint(0))
 .v.v) // if-condition end
 //seems fine
 {
@@ -12946,11 +13121,7 @@ __mkstr("int main() {")
 ;
 while
 (
-eq
-(
-__mkint(0)
-, // 2
-eq
+eq(eq
 (
 parse_stack
 //empty ToS
@@ -12960,10 +13131,7 @@ __mk_elist()
 //empty ToS
 //seems fine
 //empty ToS
-)
-//seems fine
-//empty ToS
-)
+), __mkint(0))
 .v.v) {
 //seems fine
 let_head_tail
@@ -12996,11 +13164,7 @@ __mkint(0)
 //seems fine
 if
 (
-eq
-(
-__mkint(0)
-, // 2
-eq
+eq(eq
 (
 tos
 //empty ToS
@@ -13010,10 +13174,7 @@ __mk_elist()
 //empty ToS
 //seems fine
 //empty ToS
-)
-//seems fine
-//empty ToS
-)
+), __mkint(0))
 .v.v) // if-condition end
 //seems fine
 {
@@ -13380,6 +13541,47 @@ __mkint(6)
 //seems fine
 //empty ToS
 ;}
+//seems fine
+else if
+(
+eq
+(
+fname
+//empty ToS
+,
+//seems fine
+__mkstr("neq")
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+set
+(
+fcode
+//empty ToS
+,
+//seems fine
+__mkint(7)
+//empty ToS
+)
+;
+//seems fine
+set
+(
+fname
+//empty ToS
+,
+//seems fine
+__mkstr("eq(eq")
+//empty ToS
+)
+//seems fine
+//empty ToS
+;}
+//seems fine
+//empty ToS
+// end-if
 //seems fine
 //empty ToS
 // end-if
@@ -14031,11 +14233,7 @@ __mkstr("else if")
 //seems fine
 if
 (
-eq
-(
-__mkint(0)
-, // 2
-eq
+eq(eq
 (
 fname
 //empty ToS
@@ -14043,10 +14241,7 @@ fname
 //seems fine
 __mkstr("then")
 //empty ToS
-)
-//seems fine
-//empty ToS
-)
+), __mkint(0))
 .v.v) // if-condition end
 //seems fine
 {
@@ -14123,11 +14318,7 @@ __mkstr("{")
 //seems fine
 else if
 (
-eq
-(
-__mkint(0)
-, // 2
-eq
+eq(eq
 (
 fcode
 //empty ToS
@@ -14135,10 +14326,7 @@ fcode
 //seems fine
 __mkint(5)
 //empty ToS
-)
-//seems fine
-//empty ToS
-)
+), __mkint(0))
 .v.v) // if-condition end
 //seems fine
 {
@@ -14462,9 +14650,28 @@ else if
 (
 eq
 (
-__mkint(0)
-, // 2
-eq
+fcode
+//empty ToS
+,
+//seems fine
+__mkint(7)
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+print
+(
+__mkstr("), __mkint(0))")
+//empty ToS
+)
+//seems fine
+//empty ToS
+;}
+//seems fine
+else if
+(
+eq(eq
 (
 fcode
 //empty ToS
@@ -14472,10 +14679,7 @@ fcode
 //seems fine
 __mkint(5)
 //empty ToS
-)
-//seems fine
-//empty ToS
-)
+), __mkint(0))
 .v.v) // if-condition end
 //seems fine
 {
@@ -14487,6 +14691,9 @@ __mkstr(")")
 //seems fine
 //empty ToS
 ;}
+//seems fine
+//empty ToS
+// end-if
 //seems fine
 //empty ToS
 // end-if
@@ -14561,11 +14768,7 @@ lower_parse_stack
 //seems fine
 if
 (
-eq
-(
-__mkint(0)
-, // 2
-eq
+eq(eq
 (
 lower_tos
 //empty ToS
@@ -14575,10 +14778,7 @@ __mk_elist()
 //empty ToS
 //seems fine
 //empty ToS
-)
-//seems fine
-//empty ToS
-)
+), __mkint(0))
 .v.v) // if-condition end
 //seems fine
 {
@@ -14695,6 +14895,32 @@ __mkint(3)
 //seems fine
 //empty ToS
 ;}
+//seems fine
+else if
+(
+eq
+(
+lower_fstack_tos
+//empty ToS
+,
+//seems fine
+__mkint(7)
+//empty ToS
+)
+.v.v) // if-condition end
+//seems fine
+{
+print
+(
+__mkstr(",")
+//empty ToS
+)
+//seems fine
+//empty ToS
+;}
+//seems fine
+//empty ToS
+// end-if
 //seems fine
 //empty ToS
 // end-if
