@@ -11,7 +11,7 @@ concat("comment", "This is a comment. It will also execute code at runtime, but 
 The language has `while` loops and `if` clauses. The condition in `while` loops has to be properly terminated, either with closing brackets or semicolons:
 ```
 var to_be_printed = ["Hello", "World"];
-while to_be_printed != [];;
+while to_be_printed != [];
     var next_message : remaining_messages = to_be_printed;;
     to_be_printed = remaining_messages;;
     print(next_message)
@@ -77,7 +77,7 @@ while a != 42;
     ...
 endwhile
 ```
-Both operators have to be terminated by a semicolon.
+Use one semicolon after a comparison in a `while` condition.
 ## Workarounds for missing features
 The most commonly needed features are AND and OR operations.
 You can easily emulate AND by nesting if statements:
